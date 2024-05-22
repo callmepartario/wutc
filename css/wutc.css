@@ -328,7 +328,7 @@ ul.wutc-qr li {
 
 /* spell and ward detail lists */
 ul.wutc-list-details li { margin-top: 1rem; }
-ul.wutc-list-details li ul li { margin-top: 0.375rem; }
+ul.wutc-list-details li ul li { margin-top: 0.375rem; text-indent: -1rem; margin-left: 1rem; }
 
 /* tooltips */
 .tooltip.show {
