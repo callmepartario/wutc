@@ -87,7 +87,7 @@
 	Wolves Upon the Coast
 	<span class="wutc-subtitle">The Unofficial Player's Guide</span>
 </h1>
-<p class="small text-center">version 0.1c (2024-05-21)</p>
+<p class="small text-center">version 0.1d (2024-05-21)</p>
 <ul class="list-inline text-center">
 	<!--
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="/pdfs/">Download PDF</a></li>
@@ -154,10 +154,9 @@
 <ul>
 	<li>3d6 &times; 10 hacksilver (sp) worth of equipment. Anything not spent is lost.</li>
 	<li>1d6 hit dice (HD), rolled for starting hit points (HP).</li>
-	<!-- swap HD and hit dice -->
 	<li>+2 to <a href="#attacking">attacks</a>.</li>
-	<!-- add "rolls"-->
-	<li>Knowledge of 1d6/2 languages. You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare your character knows a language until encountered in play.</li>
+	<li>Knowledge of 1d6/2 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare your character knows a language until encountered in play.</li>
+	<!-- edits above -->
 </ul>
 <p>The party begins with:</p>
 <ul>
@@ -176,7 +175,7 @@
 
 <h2 id="weapons">Weapons<a class="wutc-header-anchor" href="#weapons" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
-	<li><strong>Weight.</strong> A weapon's weight determines the damage dealt on a successful <a href="#attaching">attack</a>.</li>
+	<li><strong>Weight.</strong> A weapon's weight determines the damage dealt by a successful <a href="#attaching">attack</a>.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Weapon Weight and Damage</caption>
@@ -216,7 +215,7 @@
 			<th class="vertical-align-bottom text-end" scope="col">Cost</th>
 			<th class="vertical-align-bottom" scope="col">Weight</th>
 			<th class="vertical-align-bottom" scope="col">Special Properties</th>
-			<!-- special vs. properties? -->
+			<!-- special properties -->
 		</tr>
 	</thead>
 	<tbody>
@@ -256,7 +255,7 @@
 			<td class="text-end">6</td>
 			<!-- missing price -->
 			<td>Light</td>
-			<td>Throwable. If ≥ 4 damage is dealt when thrown, it bounces. Attack again.</td>
+			<td>Throwable. If you deal 4 or more damage with a throw, it bounces. Attack again.</td>
 			<!-- edits -->
 		</tr>
 		<tr>
@@ -1136,7 +1135,7 @@
 </table></div>
 <h4 id="wind">Wind<a class="wutc-header-anchor" href="#wind" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Movement Bonus.</strong> If the wind is directly behind the <a href="#vessel">vessel</a>, apply the bonus to its speed. If the wind is one step adjacent, apply the number in parentheses instead. For example, a strong wind blowing north-east modifies the speed of a vessel traveling north by +1. Wind strength persists for 1d6 days.</li>
+	<li><strong>Movement Bonus.</strong> If the wind is directly behind your <a href="#vessel">vessel</a>, apply the bonus to its speed. If the wind is one step adjacent, apply the number in parentheses instead. For example, a strong wind blowing north-east modifies the speed of a vessel traveling north by +1. Wind strength persists for 1d6 days.</li>
 	<!-- update for parens and other text -->
 	<li><strong>Raise Sails.</strong> Ignore bonuses and rely on oars.</li>
 </ul>
@@ -1238,7 +1237,7 @@
 <hr>
 <h3 id="upon-the-land">Upon the Land<a class="wutc-header-anchor" href="#upon-the-land" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
-	<li><strong>Speed.</strong> Hexes traveled each day. Parenthesis indicate riding a horse to death. Horses ridden to death have a 2-in-6 chance of dying each day, and might never ride again.</li>
+	<li><strong>Speed.</strong> Hexes traveled each day. Numbers in parenthesis indicate riding a horse to death (2-in-6 chance of dying each day, and the steed might never ride again).</li>
 	<li><strong>Difficult Terrain.</strong> Halves movement (rounded down).</li>
 </ul>
 <!-- move above table -->
@@ -1739,7 +1738,7 @@
 		<span class="wutc-detail-item">Magic Jar</span>
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> A soul-vessel is prepared, requiring a huge investment in research, blood and treasure. The transferral ritual takes a full month, during which the body must be maintained by others&mdash;any lapse in concentration causes failure. This one of the paths a man could walk to leave mortality behind.</li>
-			<li><strong>Effects:</strong> The soul of the caster is moved to the soul-vessel. The spirit can leave and attempt to animate soulless bodies or vie with other souls for control of their own bodies. In this case, both make a warding <a href="#saves">save</a>. If one succeeds and the other fails, they gain/retain control of the body. If both fail, the body dies, leaving only the caster. If both succeed, they now cohabitate the body.</li>
+			<li><strong>Effects:</strong> The soul of the caster is moved to the soul-vessel. The spirit can leave and attempt to animate soulless bodies or vie with other souls for control of their own bodies. In this case, both make a warding <a href="#saves">save</a>. If one succeeds and the other fails, they gain (or retain) control of the body. If both fail, the body dies, leaving only the caster. If both succeed, they now cohabitate the body.</li>
 		</ul>
 	</li>
 	<li id="details-spell-move-earth">
@@ -1961,7 +1960,7 @@
 <hr>
 <h3 id="warding">Warding<a class="wutc-header-anchor" href="#warding" title="Permalink" aria-hidden="true"></a></h3>
 <p>The base warding <a href="#saves">save</a> represents an innate protection against ill magics. These are supplemented with the use of protective charms.</p>
-<p>Unless noted otherwise, you can benefit from only one charm each day (although more can be carried). If a charm can be applied after after the fact, it doesn't count toward this limit. For example, you can be covered in the <a href="#ward-blood">blood</a> of a bear, and re-roll a save using an unguent of <a href="#ward-betony">betony</a>, but you can't benefit from the blood of a bear while wearing a garland of betony.</p>
+<p>Unless noted otherwise, you can benefit from only one charm each day (although more can be carried). If a charm can be applied after after the fact, it doesn't count toward this limit. For example, you can be covered in the <a href="#ward-blood">blood</a> of a bear, and reroll a save using an unguent of <a href="#ward-betony">betony</a>, but you can't benefit from the blood of a bear while wearing a garland of betony.</p>
 <p>2d6 doses are found where appropriate, otherwise a single dose is found. Wards must be specifically sought&mdash;the odds of chancing upon such things is low.</p>
 <div class="wutc-sidebar theme-light pt-3 pb-1 ps-3 pe-3 mt-0 mb-3">
 	<p>Plants are effective for two weeks after being picked, unless specifically made into a powder or unguent (as detailed in its description).</p>
@@ -2011,7 +2010,7 @@
 			<li><strong>Description:</strong> A purple flowering plant. Worn as a garland, it protects against the spirits of the dead. Chewed and eaten at dusk, it protects the imbiber against sorcery until the sun next rises. It can also undo paralytic magics if applied to victims as an unguent. </li>
 			<li><strong>Garland:</strong> +4 warding against Ghosts.</li>
 			<li><strong>Imbibed:</strong> +6 warding against Spells at night.</li>
-			<li><strong>Unguent:</strong> Re-roll Save against Paralysing magic at +4.</li>
+			<li><strong>Unguent:</strong> Reroll <a href="#saves">saves</a> against paralysing magic with a +4 bonus.</li>
 		</ul>
 	</li>
 	<li id="details-ward-blood">
@@ -2019,9 +2018,9 @@
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> The stuff of life, and charged with energy.</li>
 			<li><strong>Bear:</strong> The blood of a bear, worn as a second skin, forgoes fear and domination. +4 warding against mind-altering spells.</li>
-			<li><strong>Bird:</strong> The blood of a bird smeared over the face guarantees freedom from magical chains and bindings. +6 warding against Mobility-reducing effects.</li>
+			<li><strong>Bird:</strong> The blood of a bird smeared over the face guarantees freedom from magical chains and bindings. +6 warding against mobility-reducing effects.</li>
 			<li><strong>Cat:</strong> Taken from a black cat with nary a speck of white, and daubed at the arm-pits, groin and neck, a counter-charm. +2 warding.</li>
-			<li><strong>Child:</strong> An extreme rite reserved by the Druids. The life of one for the protection of another. +6 warding.
+			<li><strong>Child:</strong> An extreme rite reserved by druids. The life of one for the protection of another. +6 warding.
 			<li><strong>Dog:</strong> Douse the hands and lips in the blood of a hound and know your form and freedom. +3 warding against Body-Affecting spells.</li>
 			<li><strong>Fish:</strong> The alien blood of fish, rubbed into the scalp, confuses and repels the spirits of the land. +2 warding against land-bound spirits.</li>
 			<li><strong>Horse:</strong> A bath of horse-blood marks a warrior as ready to die by weapons, not sorcery. +3 warding against mortal magic users.</li>
@@ -2047,7 +2046,8 @@
 		<span class="wutc-detail-item">Cold-Stones</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Flat heavy pebbles painted with the geometric magic of the Pictish druids. Ran across the brow of one beleagured by magical ailments, they are said to alleviate symptoms. Carried in the pocket, they provide some small luck.</li>
-			<li><strong>Effects:</strong> Re-roll Save against disease or poison magic at +6. +1 warding.</li>
+			<li><strong>Applied:</strong> Reroll a <a href="#saves">save</a> against disease or poison magic with a +6 bonus.</li>
+			<li><strong>Carried:</strong> +1 warding.</li>
 		</ul>
 	</li>
 	<li id="details-ward-cowslip">
@@ -2060,8 +2060,8 @@
 	<li id="details-ward-dragon-arum">
 		<span class="wutc-detail-item">Dragon Arum</span>
 		<ul class="list-unstyled">
-			<li><strong>Description:</strong> A flower from southern climes which stinks like rotting meat. The oil squeezed from the fleshy petals protects against serpents and sea-monsters. Cooked, the leaves are an abortifacient.</li>
-			<li><strong>Effects:</strong> +5 warding against Serpentine or sea monster effects. If a petal is aboard a <a href="#vessels">vessel</a>, re-roll the first river or sea monster encounter each journey.</li>
+			<li><strong>Description:</strong> A flower from southern climes which stinks like rotting meat. The oil squeezed from the fleshy petals protects against serpents and sea monsters. Cooked, the leaves are an abortifacient.</li>
+			<li><strong>Effects:</strong> +5 warding against serpentine or sea monster effects. If a petal is aboard a <a href="#vessels">vessel</a>, reroll the first river or sea monster encounter each journey.</li>
 		</ul>
 	</li>
 	<li id="details-ward-dogs">
@@ -2081,14 +2081,14 @@
 		<span class="wutc-detail-item">Elecampane</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Bright yellow flowers, open to the world and drinking it in. Those in Albann know it as a sign of elves, and leave it well alone. Eaten, others know it to fortify healing magics and protect the lungs.</li>
-			<li><strong>Effects:</strong> +1 to Healing rolls from magical sources. +4 warding against Inhaled effects. warding automatically fails against Elves.</li>
+			<li><strong>Effects:</strong> +1 to Healing rolls from magical sources. +4 warding against Inhaled effects. Warding automatically fails against Elves.</li>
 		</ul>
 	</li>
 	<li id="details-ward-eye-talismans">
 		<span class="wutc-detail-item">Eye Talismans</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Blue, white and black, the circles ensnare one another and form a mirror for malignant gazes and glares.</li>
-			<li><strong>Effects:</strong> +2 warding against Gaze-based magic. Successful saves cause the sources to also make a warding <a href="#saves">save</a>.</li>
+			<li><strong>Effects:</strong> +2 warding against gaze-based magic. Successful saves cause the sources to also make a warding <a href="#saves">save</a>.</li>
 		</ul>
 	</li>
 	<li id="details-ward-faces">
@@ -2109,7 +2109,8 @@
 		<span class="wutc-detail-item">Hazel</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> The hazel-tree affords protection to those who shelter beneath her branches. Some small nugget of this is remains within the nuts she spreads upon the ground, which protect against all things that creep upon the earth.</li>
-			<li><strong>Effects:</strong> +4 warding for those beneath the branches&mdash;this benefit can be concurrent with other charms. +1 warding against all, and an additional +3 warding against legless beasts.</li>
+			<li><strong>Tree:</strong> +4 warding for those beneath the branches&mdash;this benefit can be concurrent with other charms.</li>
+			<li><strong>Nuts:</strong> +1 warding, and an additional +3 warding against legless beasts.</li>
 		</ul>
 	</li>
 	<li id="details-ward-hawthorn">
@@ -2131,21 +2132,24 @@
 		<span class="wutc-detail-item">Hellebore</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Flowers in many colours, none to be trifled with. The black purges the mind and body, explosively. The white numbs pain and distances the imbiber from reality. The green is said to be a cure for sadness, although this is just a cruel joke.</li>
-			<li><strong>Effects:</strong> Re-roll warding against mind-altering effects at +6. Regardless of success, bed-bound with violent diarrhoea. No effect. Physique <a href="#saves">save</a> or painful death.</li>
+			<li><strong>Black Hellebore:</strong> Reroll warding against mind-altering effects with a +6 bonus. Regardless of success, bed-bound with violent diarrhoea.</li>
+			<li><strong>White Hellebore:</strong> No effect. Physique <a href="#saves">save</a> or painful death.</li>
 		</ul>
 	</li>
 	<li id="details-ward-herb-paris">
 		<span class="wutc-detail-item">Herb Paris</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> A leafy plant producing but one single berry. Crushed and smeared on the brow, it prevents the mind being bewitched. Eaten whole, it is poisonous.</li>
-			<li><strong>Effects:</strong> +4 warding against mind-altering effects. Physique <a href="#saves">save</a> or painful death.</li>
+			<li><strong>Poultice:</strong> +4 warding against mind-altering effects.</li>
+			<li><strong>Eaten Whole:</strong> Physique <a href="#saves">save</a> or painful death.</li>
 		</ul>
 	</li>
 	<li id="details-ward-holly">
 		<span class="wutc-detail-item">Holly</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> The prickly rich-green leaves of the holly nestle rich red berries in the deepest winter. Wearing the leaves in the hair protects against enchantment. The berries, worn in a bunch, repel lightning.</li>
-			<li><strong>Effects:</strong> +2 warding. +6 warding against Lightning-based effects.</li>
+			<li><strong>Leaves:</strong> +2 warding.</li>
+			<li><strong>Berries:</strong> +6 warding against Lightning-based effects.</li>
 		</ul>
 	</li>
 	<li id="details-ward-horses">
@@ -2166,8 +2170,8 @@
 	<li id="details-ward-ivy">
 		<span class="wutc-detail-item">Ivy</span>
 		<ul class="list-unstyled">
-			<li><strong>Description:</strong> Creeping vines bind buildings tight and worm through the smallest gaps.</li>
-			<li><strong>Effects:</strong> Those within are protected from magics flung towards the building. +3 warding for all inside. This benefit can be concurrent with other charms.</li>
+			<li><strong>Description:</strong> Creeping vines bind buildings tight and worm through the smallest gaps. Those within are protected from magics flung towards the building.</li>
+			<li><strong>Effects:</strong> +3 warding for all inside. This benefit can be concurrent with other charms.</li>
 		</ul>
 	</li>
 	<li id="details-ward-mullein">
@@ -2205,14 +2209,14 @@
 		<span class="wutc-detail-item">Rosemary</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Blue flowers and green-needles sprout from this storied plant. A garland of flowers worn or a twig carried protects against invisible things.</li>
-			<li><strong>Effects:</strong> +4 warding against Spirits and incorporeal beings.</li>
+			<li><strong>Effects:</strong> +4 warding against spirits and incorporeal beings.</li>
 		</ul>
 	</li>
 	<li id="details-ward-rowan">
 		<span class="wutc-detail-item">Rowan</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> The orange-red berries of the rowan are each marked with a five-pointed star&mdash;an indicator of their potency. Ground to a paste and smeared on a shield, they protect the wielder.</li>
-			<li><strong>Effects:</strong> +4 warding til the paste dries entirely.</li>
+			<li><strong>Effects:</strong> +4 warding until the paste dries.</li>
 			<li><strong>Duration:</strong> About 2 hours (12 turns).</li>
 		</ul>
 	</li>
@@ -2228,7 +2232,7 @@
 		<span class="wutc-detail-item">Sulphur</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> A mineral eager to burn and release its terrible stink, all those breathing in the pungent smoke fall to retching but are purified of foul enchantment.</li>
-			<li><strong>Effects:</strong> Re-roll warding at +6. Physique <a href="#saves">save</a> to not lose d6 rounds to vomiting.</li>
+			<li><strong>Effects:</strong> Reroll warding with a +6 bonus. Physique <a href="#saves">save</a> to not lose d6 rounds to vomiting.</li>
 		</ul>
 	</li>
 	<li id="details-ward-verbena">
@@ -2243,9 +2247,9 @@
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> The written word, whether latin script or ancient runes, has a magic of its own and can protect against other forms.</li>
 			<li><strong>Common:</strong> Markings in common materials give +1 warding against exactly what they describe.</li>
-			<li><strong>Powerful Blood:</strong> Markings in sea-beast ink and monster-blood taken from a creature with at least 5 HD grant +2 warding against a category of threat.</li>
+			<li><strong>Powerful Blood:</strong> Markings in sea-beast ink and monster blood taken from a creature with at least 5 HD grant +2 warding against a category of threat.</li>
 			<li><strong>Runes:</strong> Runes in crushed diamond mixed with royal blood can grant a permanent +3 warding, power condensed into a single phrase or marking.</li>
-			<li><strong>Tattoos:</strong> Sea-beast ink and monster-blood can be used to create tattoos, which grant permanent +1 warding. This benefit can be concurrent with other charms. Up to two such tattoos can be worn, but the second must be sourced from a higher HD creature than the first.</li>
+			<li><strong>Tattoos:</strong> Sea-beast ink and monster blood can be used to create tattoos, which grant permanent +1 warding. This benefit can be concurrent with other charms. Up to two such tattoos can be worn, but the second must be sourced from a creature with more HD than the first.</li>
 		</ul>
 	</li>
 	<li id="details-ward-yarrow">
