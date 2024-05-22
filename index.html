@@ -58,7 +58,7 @@
 					<a class="nav-link dropdown-toggle" href="#" id="wutc-navbar-advancement" role="button" data-bs-toggle="dropdown" aria-expanded="false">Advancement</a>
 					<ul class="dropdown-menu dropdown-menu-light theme-light" aria-labelledby="wutc-navbar-advancement">
 						<li><a class="dropdown-item wutc-nav" href="#boasts">Boasts</a></li>
-						<li><a class="dropdown-item wutc-nav" href="#companions-and-hirelings">Companions &amp; Hirelings</a></li>
+						<li><a class="dropdown-item wutc-nav" href="#companions-and-hirelings">Companions and Hirelings</a></li>
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
@@ -87,7 +87,7 @@
 	Wolves Upon the Coast
 	<span class="wutc-subtitle">The Unofficial Player's Guide</span>
 </h1>
-<p class="small text-center">version 0.1g (2024-05-21)</p>
+<p class="small text-center">version 0.1h (2024-05-21)</p>
 <ul class="list-inline text-center">
 	<!--
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="/pdfs/">Download PDF</a></li>
@@ -780,7 +780,7 @@
 <p>In response to action or need for you to muster your defenses, the Referee might call for you to roll a a d20 for a save. The target number you must meet or exceed depends on the save:</p>	
 <!-- edits -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
-	<caption>Tests</caption>
+	<caption>Saves</caption>
 	<thead>
 		<tr>
 			<th class="vertical-align-bottom" scope="col">Save</th>
@@ -876,7 +876,7 @@
 	<tbody>
 		<tr>
 			<th class="fw-normal" scope="row">Fast</th>
-			<td>+4 to doding</td>
+			<td>+4 to dodging</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Tough</th>
@@ -983,6 +983,8 @@
 <ul>
 	<li><strong>Companions.</strong> For each 1000 sp of wealth you have, you might attract a companion. Adventuring companions take half the share a character takes from all loot.</li>
 	<li><strong>Hirelings.</strong> You can hire as many hirelings as you can find and pay.</li>
+	<li><strong>Shield in Hand (&dagger;).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a shield equipped reduce their AC by 1.</li>
+	<li><strong>Skirmishers (&ddagger;).</strong> Tests <a href="#morale">morale</a> when entering a melee, and each round they remain.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Hirelings</caption>
@@ -1002,15 +1004,15 @@
 			<td class="text-center">1</td>
 		</tr>
 		<tr>
-			<th class="fw-normal" scope="row">Skirmisher</th>
+			<th class="fw-normal" scope="row">Skirmisher &ddagger;</th>
 			<td class="text-end">5</td>
 			<td class="text-center">9</td>
 			<td class="text-center">1 + 1</td>
 		</tr>
 		<tr>
-			<th class="fw-normal" scope="row">Footman</th>
+			<th class="fw-normal" scope="row">Footman &dagger;</th>
 			<td class="text-end">10</td>
-			<td class="text-center">6/7</td>
+			<td class="text-center">7</td>
 			<td class="text-center">1 + 1</td>
 		</tr>
 		<tr>
@@ -1020,24 +1022,19 @@
 			<td class="text-center">1 + 1</td>
 		</tr>
 		<tr>
-			<th class="fw-normal" scope="row">Armored Footman</th>
+			<th class="fw-normal" scope="row">Armored Footman &dagger;</th>
 			<td class="text-end">20</td>
-			<td class="text-center">4/5</td>
+			<td class="text-center">4</td>
 			<td class="text-center">1 + 2</td>
 		</tr>
 		<tr>
-			<th class="fw-normal" scope="row">Horseman</th>
+			<th class="fw-normal" scope="row">Horseman &dagger;</th>
 			<td class="text-end">40</td>
-			<td class="text-center">4/5</td>
+			<td class="text-center">5</td>
 			<td class="text-center">1 + 1</td>
 		</tr>
 	</tbody>
 </table></div>
-<!-- remind me what the AC slashes and HD formulae are again? -->
-<div class="wutc-sidebar theme-light pt-3 pb-1 ps-3 pe-3 mt-0 mb-3">
-	<p>Skirmishers must test <a href="#morale">morale</a> to enter a melee, and each round they remain there.</p>
-	<!-- edits -->
-</div>
 <hr>
 <h2 id="travel">Travel<a class="wutc-header-anchor" href="#travel" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
@@ -1183,7 +1180,7 @@
 	<li><strong>Direction.</strong> Roll 1d6 each day to determine change in wind direction:</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
-	<caption>Wind Strength</caption>
+	<caption>Wind Direction</caption>
 	<thead>
 		<tr>
 			<th class="vertical-align-bottom text-center" scope="col">1d6</th>
@@ -1287,7 +1284,7 @@
 <h4 id="light">Light<a class="wutc-header-anchor" href="#light" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Torches.</strong> Burn for one hour (6 turns).</li>
-	<li><strong>Lanterns.</strong> A pint of lantern oil burns for 4 hours (24 turns).</li>
+	<li><strong>Lanterns.</strong> A <a href="#supplies-and-encumbrance">pint flask of oil</a> burning in a <a href="#supplies-and-encumbrance">lantern</a> lasts 4 hours (24 turns).</li>
 	<li><strong>Monsters.</strong> Might be able to see in darkness.</li>
 </ul>
 <h4 id="beneath-the-earth-movement">Movement<a class="wutc-header-anchor" href="#beneath-the-earth-movement" title="Permalink" aria-hidden="true"></a></h4>
@@ -1389,56 +1386,56 @@
 	<li id="details-spell-alter-self">
 		<span class="wutc-detail-item">Alter Self</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Consume a simulacrum of the target crafted with their hair and blood mixed with 100 chrysalises or cocoons.</li>
-			<li><strong>1/day:</strong> Blasphemous induction into the Doppelganger cult. Unspeakable rites and child sacrifice.</li>
-			<li><strong>Effects:</strong> The caster can reshape themselves in the image of another humanoid.</li>
+			<li><strong>One Use:</strong> Craft a simulacrum of the target, made from their hair and blood, and mixed with 100 chrysalises or cocoons. Consume it.</li>
+			<li><strong>1/day:</strong> Receive blasphemous induction into a doppelganger cult. Participate in unspeakable rites and child sacrifice.</li>
+			<li><strong>Effects:</strong> You reshape yourself in the image of another humanoid.</li>
 			<li><strong>Duration:</strong> 36 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-animal-growth">
 		<span class="wutc-detail-item">Animal Growth</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The blood of a pregnant animal mixed with stewed lilac, left to brew for a year. Flicked at the target.</li>
-			<li><strong>Effects:</strong> 1d6 Animals become giant.</li>
+			<li><strong>One Use:</strong> Mix blood of a pregnant animal with stewed lilac, and leave to brew for a year. Flick the droplets at the targets.</li>
+			<li><strong>Effects:</strong> 1d6 animals gain giant proportions.</li>
 			<li><strong>Duration:</strong> 12 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-animate-dead">
 		<span class="wutc-detail-item">Animate Dead</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The teeth of a hydra are scattered over the area.</li>
-			<li><strong>Effects:</strong> 5d6 Skeletons rise from the earth, bound to the will of the caster.</li>
+			<li><strong>One Use:</strong> Scatter the teeth of a hydra over the area.</li>
+			<li><strong>Effects:</strong> 5d6 skeletons rise from the earth, bound to your will.</li>
 		</ul>
 	</li>
 	<li id="details-spell-anti-magic-shield">
 		<span class="wutc-detail-item">Anti-Magic Shield</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A circle described with 'chalk' formed from diamond-dust and dragonbone.</li>
-			<li><strong>Effects:</strong> No magic can pass through, under or over this barrier&mdash;creatures within are utterly immune to magic.</li>
+			<li><strong>One Use:</strong> Craft a chalk of diamond-dust and dragonbone. Inscribe a circle with it.</li>
+			<li><strong>Effects:</strong> No magic can pass through, under, or over this barrier&mdash;creatures within are utterly immune to magic.</li>
 		</ul>
 	</li>
 	<li id="details-spell-baleful-polymorph">
 		<span class="wutc-detail-item">Baleful Polymorph</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A fragment of undifferentiated chaos, thrown as a javelin and fuelled with malice.</li>
-			<li><strong>Effects:</strong> The target is transformed, as desired by the caster.</li>
+			<li><strong>One Use:</strong> Throw a javelin-like fragment of undifferentiated malice-fueld chaos.</li>
+			<li><strong>Effects:</strong> The target is transformed as you desire.</li>
 		</ul>
 	</li>
 	<li id="details-spell-bless">
 		<span class="wutc-detail-item">Bless</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Blast upon a horn wrenched from the skull of a Satyr or Narwhal.</li>
+			<li><strong>One Use:</strong> Blast upon a horn wrenched from the skull of a satyr or narwhal.</li>
 			<li><strong>1/day:</strong> Blast upon a horn gifted by the unicorn.</li>
-			<li><strong>Effects:</strong> Allies of the caster gain a +1 to <a href="#attacking">attacks</a> and to <a href="#morale">morale</a></li>
+			<li><strong>Effects:</strong> Your allies gain a +1 bonus to <a href="#attacking">attacks</a> and <a href="#morale">morale</a> checks.</li>
 			<li><strong>Duration:</strong> 6 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-charm-monster">
 		<span class="wutc-detail-item">Charm Monster</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Craft a mask of the creatures to be charmed, using their skin, blood, hair and horn. For each HD, 1 corpse must be processed.</li>
-			<li><strong>1/day:</strong> Become a monster yourself. This one of the paths a man could walk to leave mortality behind.</li>
-			<li><strong>Effects:</strong> 3d6 HD of creatures are bound to the will of the caster. Orders antithetical to their nature cause them to break free if they succeed a warding <a href="#saves">save</a>.</li>
+			<li><strong>One Use:</strong> Craft a mask of the creatures to be charmed, using body parts of similar creatures (for example, skin, blood, hair, or horn)&mdash;using one corpse for each of the target's HD.</li>
+			<li><strong>1/day:</strong> Become a monster yourself. This one of the paths one could walk to leave mortality behind.</li>
+			<li><strong>Effects:</strong> 3d6 HD of creatures are bound to your will. Orders antithetical to their nature cause them to make a warding <a href="#saves">save</a>. On a success, they break free of the spell.</li>
 		</ul>
 	</li>
 	<li id="details-spell-charm-person">
@@ -1446,121 +1443,124 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> A thick pearlescent slug, gathered from the home of a dryad, and spat at the target.</li>
 			<li><strong>1/day:</strong> Ascend a mountain of stunning beauty with twelve companions, all of equal drive and knowledge. One can descend the mountain alive, cursed with this power.</li>
-			<li><strong>Effects:</strong> A single human or post-human must succeed on a warding <a href="#saves">save</a> or be bound to the will of the caster. Orders antithetical to the target's nature trigger a warding <a href="#saves">save</a>. On a success, they break free of the spell.</li>
+			<li><strong>Effects:</strong> A single human or post-human must succeed a warding <a href="#saves">save</a> or be bound to your will. Orders antithetical to their nature cause them to make a warding <a href="#saves">save</a>. On a success, they break free of the spell.</li>
 		</ul>
 	</li>
 	<li id="details-spell-circle-of-invisibility">
 		<span class="wutc-detail-item">Circle of Invisibility</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Powder derived from the eyes of a medusae is scattered in the area.</li>
-			<li><strong>Effects:</strong> All within this area are become invisible, and remain so until they take a hostile action or choose to be seen.</li>
+			<li><strong>One Use:</strong> Scatter a powder derived from the eyes of a medusae over the area.</li>
+			<li><strong>Effects:</strong> Creatures within the area become invisible. Invisible creatures that take a hostile action become visible again.</li>
 		</ul>
 	</li>
 	<li id="details-spell-circle-of-protection">
 		<span class="wutc-detail-item">Circle of Protection</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The caster coats their mouth with blessed oils and performs glossolalia effortlessly. The origin of the blessing determines whom the protection is effective against.</li>
-			<li><strong>1/day:</strong> The prospective caster is tattooed with exhortations and banishments, using ink from a giant squid or a gall harvested from a centuries-old tree.</li>
-			<li><strong>Effects:</strong> All creatures within the are protected. Those the protection is against have a &minus;2 penalty on <a href="#attacking">attacks</a> against the protected</li>
+			<li><strong>One Use:</strong> Coat your mouth with blessed oils and perform glossolalia. The origin of the blessing determines what creature the spell abjures.</li>
+			<li><strong>1/day:</strong> You must become tattooed with exhortations and banishments, using ink from a giant squid, or a gall harvested from a centuries-old tree.</li>
+			<li><strong>Effects:</strong> All creatures within the area are protected. If an abjured creature <a href="#attacking">attacks</a> a protected creature, they do so with a &minus;2 penalty.</li>
 			<li><strong>Duration:</strong> 6 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-clairvoyance">
 		<span class="wutc-detail-item">Clairvoyance</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A fragile blade of obsidian must be used to open the caster's forehead, allowing their presence to slip forth.</li>
-			<li><strong>1/day:</strong> The caster is trepanned using a drill of star-metal which is discarded in a pool unsullied by fish.</li>
-			<li><strong>Effects:</strong> The caster's awareness is freed form the body, and able to travel up to half a mile from their body for 36 turns. They can't pass through lead or 20 feet of stone.</li>
+			<li><strong>One Use:</strong> Open your forehead with fragile blade of obsidian, allowing your presence to slip forth.</li>
+			<li><strong>1/day:</strong> Bore a hole into your skull with a drill of star-metal, then discard the drill in a pool unsullied by fish.</li>
+			<li><strong>Effects:</strong> Your awareness is freed from your body. You can travel up to half a mile from your body. They can't pass through lead or 20 feet of stone.</li>
+			<li><strong>Duration:</strong> 36 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-cloudkill">
 		<span class="wutc-detail-item">Cloudkill</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The lungs of certain dragons, formed into bellows.</li>
-			<li><strong>Effects:</strong> A thick, heavier-than-air poisonous fog is summoned. Those caught within must make a Physique <a href="#saves">save</a> or die wretched deaths.</li>
+			<li><strong>One Use:</strong> Form the lungs of certain dragons into a bellows.</li>
+			<li><strong>Effects:</strong> You summon a thick, heavier-than-air poisonous fog. Creatures caught within must succeed a physique <a href="#saves">save</a> or die a wretched death.</li>
 		</ul>
 	</li>
 	<li id="details-spell-colour-spray">
 		<span class="wutc-detail-item">Colour Spray</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Behead a light-drinking cave-eel. </li>
-			<li><strong>1/day:</strong> The eye-lens of a beached whale is held up before a light-source.</li>
-			<li><strong>Effects:</strong> A glare of alien colours stuns those unable to make a warding <a href="#saves">save</a>, rendering them unable to take action for 1d6 rounds.</li>
+			<li><strong>One Use:</strong> Behead a light-drinking cave-eel.</li>
+			<li><strong>1/day:</strong> Hold up the eye-lens of a beached whale up to a light source.</li>
+			<li><strong>Effects:</strong> A glare of alien colours errupts, stunning creatures that fail a warding <a href="#saves">save</a>. A stunned creature can't take actions.</p>
+			<li><strong>Duration:</strong> 1d6 rounds</li>
 		</ul>
 	</li>
 	<li id="details-spell-comprehend-languages">
 		<span class="wutc-detail-item">Comprehend Languages</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A local, poisonous serpent must be swallowed alive. Lasts 1d4 days.</li>
+			<li><strong>One Use:</strong> Swallow a local poisonous serpent alive.</li>
 			<li><strong>1/day:</strong> An ancient grammar must be recovered and eaten.</li>
-			<li><strong>Permanent:</strong> The caster's tongue is split open with a golden sickle beneath a moon hidden behind the fallen Tower of Babel.</li>
 			<li><strong>Effects:</strong> All languages can be understood, spoken, read and written.</li>
+			<li><strong>Duration:</strong> 1d4 days</li>
+			<li><strong>Permanent:</strong> While beneath a moon hidden behind the fallen Tower of Babel, split your tongue open with a golden sickle.</li>
 		</ul>
 	</li>
 	<li id="details-spell-confusion">
 		<span class="wutc-detail-item">Confusion</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The skull of a hermit, filled with poppy-seeds is shaken like a rattle, inflicting the spell upon those who hear it.</li>
-			<li><strong>Effects:</strong> Up to 3d6 HD of creatures become confused. There is a 2-in-6 chance they defend themselves, otherwise uncomprehending eyes stare at a world untethered from system.</li>
+			<li><strong>One Use:</strong> Shake the skull of a hermit filled with poppy-seeds. Targets must be able to hear the rattling noise.</li>
+			<li><strong>Effects:</strong> 3d6 HD of creatures become confused. Affected creatures have a 2-in-6 chance to defend themselves, otherwise uncomprehending eyes stare at a world, untethered from it.</li>
 		</ul>
 	</li>
 	<li id="details-spell-continuous-light">
 		<span class="wutc-detail-item">Continuous Light</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The heart of a dead forge is tossed towards the target. </li>
-			<li><strong>1/day:</strong> Some fragment of a sun must be swallowed.</li>
-			<li><strong>Effects:</strong> An area is permanently light by actual sunlight, emanating from a source chosen by the caster.</li>
+			<li><strong>One Use:</strong> Toss the heart of a dead forge at the target.</li>
+			<li><strong>1/day:</strong> Swallow fragments of a sun.</li>
+			<li><strong>Effects:</strong> An area is permanently lit by sunlight, emanating from a source of your choice.</li>
 		</ul>
 	</li>
 	<li id="details-spell-control-water">
 		<span class="wutc-detail-item">Control Water</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The true name of the body of water must be invoked. Being transient, the name will change each time.</li>
-			<li><strong>Effects:</strong> Water can be commanded to allow passage through it or to rise up and flood an area.</li>
+			<li><strong>One Use:</strong> Invoke the true name of the body of water. Water's transient nature means this name changes each time.</li>
+			<li><strong>Effects:</strong> You can command water to allow passage through it or to rise up and flood an area.</li>
 		</ul>
 	</li>
 	<li id="details-spell-control-weather">
 		<span class="wutc-detail-item">Control Weather</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Gather the first fledgling bird hatched in the area. Gather the first-born mammal born in the area. Gather the first-spawned amphibian in the area. Commingle their blood and their flesh beneath the sky and make your demand.</li>
-			<li><strong>Effects:</strong> The caster determines which weather permanently affects the region.</li>
+			<li><strong>One Use:</strong> Gather the first fledgling bird hatched, the first-born mammal born, and the first-spawned amphibian in the area. Commingle their blood and flesh beneath the sky, and make your demand.</li>
+			<li><strong>Effects:</strong> You determines the weather, which permanently affects the region.</li>
 		</ul>
 	</li>
 	<li id="details-spell-cure-critical-wounds">
 		<span class="wutc-detail-item">Cure Critical Wounds</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A salve brewed from the blood of a troll and bitter roots. Each troll corpse yielding enough for a single dose after successive reductions.</li>
-			<li><strong>Effects:</strong> 3d6 + 2 HP is restored.</li>
+			<li><strong>One Use:</strong> Brew a salve from the reduces blood of a troll corpse and bitter roots.</li>
+			<li><strong>Effects:</strong> You restore 3d6 + 2 HP to a creature.</li>
 		</ul>
 	</li>
 	<li id="details-spell-cure-light-wounds">
 		<span class="wutc-detail-item">Cure Light Wounds</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Harvest the herbs and mushrooms from the grave of a witch unburnt. Boil them down. Spread upon wounds.</li>
-			<li><strong>1/day:</strong> Accept a subtle spirit into your protection. They are hard to find, and make demands upon you. They also count as a <a href="#companions-and-hirelings">hireling</a>.</li>
-			<li><strong>Effects:</strong> 1d6 + 1 HP is restored.</li>
+			<li><strong>One Use:</strong> Harvest the herbs and mushrooms from the grave of an unburnt witch. Boil them down and spread them upon the wounds.</li>
+			<li><strong>1/day:</strong> Accept a subtle spirit into your protection. Such spirits are rare, and also might make demands of you (counts as a <a href="#companions-and-hirelings">hireling</a>).</li>
+			<li><strong>Effects:</strong> You restore 1d6 + 1 HP to a creature.</li>
 		</ul>
 	</li>
 	<li id="details-spell-cure-serious-wounds">
 		<span class="wutc-detail-item">Cure Serious Wounds</span>
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Flesh for flesh&mdash;a bath of blood.</li>
-			<li><strong>Effects:</strong> Every 1 HD of creature blood spilled heals 1 HP. Can be used by multiple people.</li>
+			<li><strong>Effects:</strong> Every 1 HD of creature blood spilled heals 1 HP. Multiple creatures can share in this healing.</li>
 		</ul>
 	</li>
 	<li id="details-spell-curse">
 		<span class="wutc-detail-item">Curse</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Release a dirge on a horn wrenched from the skull of demon with less than 7 HD. </li>
+			<li><strong>One Use:</strong> Release a dirge on a horn wrenched from the skull of demon with less than 7 HD.</li>
 			<li><strong>1/day:</strong> Release a dirge on a horn wrenched from the skull of demon with at least 7 HD.</li>
-			<li><strong>Effects:</strong> The enemies of the caster have &minus;1 penalty to <a href="#attacking">attacks</a> and  <a href="#morale">morale</a></li>
+			<li><strong>Effects:</strong> Your enemies'  <a href="#attacking">attacks</a> and  <a href="#morale">morale</a> checks are made with a &minus;1 penalty.</li>
 			<li><strong>Duration:</strong> 6 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-darkness">
 		<span class="wutc-detail-item">Darkness</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Burst the eye of a mother fox or bat. Fling the pulp.</li>
+			<li><strong>One Use:</strong> Burst the eye of a mother fox or bat. Fling the pulp over the area.</li>
 			<li><strong>1/day:</strong> Make a home for darkness in your chest cavity&mdash;a glazed clay sphere, inserted surgically. Alternatively, find some talking darkness and strike a deal.</li>
 			<li><strong>Effects:</strong> Total darkness suffuses an area, out to the distance a torch would illuminate. No light can pierce such magical darkness.</li>
 			<li><strong>Duration:</strong> 24 hours (144 turns)</li>
@@ -1569,90 +1569,90 @@
 	<li id="details-spell-detect-invisibility">
 		<span class="wutc-detail-item">Detect Invisibility</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Three drops of fluid left by ghost in each eye.</li>
-			<li><strong>1/day:</strong> Replacing an eye with a huge pearl.</li>
-			<li><strong>Effects:</strong> The caster can always see invisible creatures.</li>
+			<li><strong>One Use:</strong> Place three drops of fluid left by ghost into each eye.</li>
+			<li><strong>1/day:</strong> Replace one of your eyes with a huge pearl.</li>
+			<li><strong>Effects:</strong> You can see invisible creatures.</li>
 		</ul>
 	</li>
 	<li id="details-spell-detect-magic">
 		<span class="wutc-detail-item">Detect Magic</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A drop of pure-white or pure-black dog blood in each eye.</li>
-			<li><strong>1/day:</strong> Replacing an eye with a lump of quartz.</li>
-			<li><strong>Effects:</strong> All magic within eyesight reveals itself.</li>
+			<li><strong>One Use:</strong> Place a drop of pure-white or pure-black dog blood into each eye.</li>
+			<li><strong>1/day:</strong> Replace one of your eyes with a lump of quartz.</li>
+			<li><strong>Effects:</strong> All magic within your sight reveals itself to you.</li>
 			<li><strong>Duration:</strong> 3 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-dimension-door">
 		<span class="wutc-detail-item">Dimension Door</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A dagger prepared with the blood of a Realm Spider is used to describe a door.</li>
-			<li><strong>Effects:</strong> The caster teleports anywhere within line of sight by stepping through the door they drew.</li>
+			<li><strong>One Use:</strong> Inscribe a door with a dagger prepared with the blood of a realm spider.</li>
+			<li><strong>Effects:</strong> You step through the door, teleporting to anywhere else you can see.</li>
 		</ul>
 	</li>
 	<li id="details-spell-disintegrate">
 		<span class="wutc-detail-item">Disintegrate</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A fragment of Outer Dark, released from a container, snakes outwards.</li>
-			<li><strong>Effects:</strong> A single target must succeed a dodging <a href="#saves">save</a> with a &minus;4 penalty or be destroyed.</li>
+			<li><strong>One Use:</strong> Release a fragment of Outer Dark from a container, which snakes outwards.</li>
+			<li><strong>Effects:</strong> One target must succeed a dodging <a href="#saves">save</a> with a &minus;4 penalty or be destroyed.</li>
 		</ul>
 	</li>
 	<li id="details-spell-dispel-magic">
 		<span class="wutc-detail-item">Dispel Magic</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Salt from a dead ocean, cast at the enchanted object.</li>
-			<li><strong>1/day:</strong> Leaving a limb in a jar of salt, allowing all moisture to be drained away&mdash;leaving only a withered limb.</li>
+			<li><strong>One Use:</strong> Cast salt from a dead ocean at the target.</li>
+			<li><strong>1/day:</strong> Leave one of your limbs in a jar of salt until all moisture is drained away&mdash;leaving only a withered limb.</li>
 			<li><strong>Effects:</strong> Removes magic not bound into an object.</li>
 		</ul>
 	</li>
 	<li id="details-spell-enervate-dead">
 		<span class="wutc-detail-item">Enervate Dead</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Blessed lily-smoke is released from a container. The smoke seeks the restless dead.</li>
-			<li><strong>Effects:</strong> 4d6 undead are frozen in place</li>
+			<li><strong>One Use:</strong> Release blessed lily-smoke is from a container, which seeks out the restless dead.</li>
+			<li><strong>Effects:</strong> 4d6 undead are frozen in place.</li>
 			<li><strong>Duration:</strong> 12 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-fear">
 		<span class="wutc-detail-item">Fear</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A mask-and-cape of wolf-hide is worn.</li>
+			<li><strong>One Use:</strong> Wear a mask-and-cape of wolf-hide.</li>
 			<li><strong>1/day:</strong> Kill a primordial wolf-mother and re-enact the Birth of the First Wolves.</li>
-			<li><strong>Effects:</strong> All opponents of the caster succeed on a warding <a href="#saves">save</a> or flee. Characters who fail can't engage in combat with the caster.</li>
+			<li><strong>Effects:</strong> Your enemies must succeed a warding <a href="#saves">save</a> or flee. Characters who fail can't engage in combat with the caster.</li>
 			<li><strong>Duration:</strong> 6 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-fireball">
 		<span class="wutc-detail-item">Fireball</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Throw the shrivelled heart of a salamander, stored in cooking oil.</li>
+			<li><strong>One Use:</strong> Store the shrivelled heart of a salamander in cooking oil. Throw it at the target.</li>
 			<li><strong>1/day:</strong> Sojourn to a Place of Fire and sacrifice a limb to the beings within.</li>
-			<li><strong>Effects:</strong> A ball of flame explodes, dealing 5d6 damage to creatures in a 50-foot radius, or half as much on a succesful dodging <a href="#saves">save</a>.</li>
+			<li><strong>Effects:</strong> You create an explosive ball of flame, which deals 5d6 damage to creatures in a 50-foot radius. Creatures that succeed a dodging <a href="#saves">save</a> take half the damage.</li>
 		</ul>
 	</li>
 	<li id="details-spell-fly">
 		<span class="wutc-detail-item">Fly</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A bar of goose-fat, hemlock and nightshade berries is smeared on the body. A feather of gold is crushed.</li>
-			<li><strong>1/day:</strong> Become spouse to a griffon or similar.</li>
-			<li><strong>Permanent:</strong> Become a Sphinx or Harpy.</li>
-			<li><strong>Effects:</strong> Fly, travelling at triple-speeds through the air</li>
+			<li><strong>One Use:</strong> Smear a bar of goose-fat, hemlock and nightshade berries on your body. Crush a feather of gold.</li>
+			<li><strong>1/day:</strong> Become spouse to a griffon or similar creature.</li>
+			<li><strong>Effects:</strong> You can fly through the air at triple your normal speed.</li>
 			<li><strong>Duration:</strong> 1d6 turns</li>
+			<li><strong>Permanent:</strong> Become a sphinx or harpy.</li>
 		</ul>
 	</li>
 	<li id="details-spell-fog-wall">
 		<span class="wutc-detail-item">Fog Wall</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The caster swallows eight frogs whole to charge the spell&mdash;vomiting out fog at will.</li>
+			<li><strong>One Use:</strong> Swallow eight frogs whole to charge the spell&mdash;then vomit out fog at will.</li>
 			<li><strong>1/day:</strong> Deliver freedom to a mist-wight.</li>
-			<li><strong>Effects:</strong> A 20-foot thick bank of fog rolls in. It is immobile and opaque.</li>
+			<li><strong>Effects:</strong> A 20-foot thick bank of immobile, opaque fog rolls in.</li>
 		</ul>
 	</li>
 	<li id="details-spell-hallucinatory-terrain">
 		<span class="wutc-detail-item">Hallucinatory Terrain</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A vellum map with diamond-dust infused inks is produced, describing the illusory terrain. It is then burnt.</li>
-			<li><strong>Effects:</strong> Creates an illusionary overlay which can hide, exaggerate, or entirely change the underlying geography. At a distance, it is flawless.</li>
+			<li><strong>One Use:</strong> Produce a vellum map with diamond-dust infused inks, which describes the illusory terrain. Burn it.</li>
+			<li><strong>Effects:</strong> You create an illusionary overlay which can hide, exaggerate, or entirely change the underlying geography. At a distance, it is flawless.</li>
 		</ul>
 	</li>
 	<li id="details-spell-haste">
@@ -1660,52 +1660,52 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Consume the meat of a bird or hare killed by lightning.</li>
 			<li><strong>1/day:</strong> Survive being struck with lightning.</li>
-			<li><strong>Effects:</strong> Hasted creatures always go first in initiative, and take a second set of actions after all other actions are resolved.</li>
+			<li><strong>Effects:</strong> A hasted creature always goes first in initiative. Each round, they can take a second set of actions after all other actions are resolved.</li>
 			<li><strong>Duration:</strong> 3 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-hold-monster">
 		<span class="wutc-detail-item">Hold Monster</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Break the legs of a statuette found in iron slag and wrapped in the flowers of an invasive species.</li>
+			<li><strong>One Use:</strong>  Wrap in the flowers of an invasive species around a statuette found in iron slag. Break its legs.</li>
 			<li><strong>Effects:</strong> 1d6 monsters must succeed a warding <a href="#saves">save</a> or be rendered immobile.</li>
 		</ul>
 	</li>
 	<li id="details-spell-hold-person">
 		<span class="wutc-detail-item">Hold Person</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Break the legs of a wood figurine unshaped by blades and buried for two months.</li>
-			<li><strong>Effects:</strong> 1d6 humans must succeed warding <a href="#saves">save</a> or be rendered immobile.</li>
+			<li><strong>One Use:</strong> Bury a wood figurine unshaped by blades and for two months. Break its legs.</li>
+			<li><strong>Effects:</strong> 1d6 humans must succeed a warding <a href="#saves">save</a> or be rendered immobile.</li>
 		</ul>
 	</li>
 	<li id="details-spell-hold-portal">
 		<span class="wutc-detail-item">Hold Portal</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The caster fills the mouth with gravel and holds a fragment of the portal between their teeth.</li>
-			<li><strong>1/day:</strong> Devotion to the Opener of the Way&mdash;through the murder of those bound to capture and imprison people&mdash;at least one every two months.</li>
-			<li><strong>Effects:</strong> A single opening or portal is magically locked, becoming unable to be opened without destroying the surroundings or gaining the caster's permission.</li>
+			<li><strong>One Use:</strong> Fill your mouth with gravel and hold a fragment of the portal between your teeth.</li>
+			<li><strong>1/day:</strong> Devotion to the Opener of the Way&mdash;through the murder of those that capture and imprison others&mdash;at least one every two months.</li>
+			<li><strong>Effects:</strong> An opening or portal is magically locked to creatures who don't have your permission. It can be opened if its surroundings are destroying.</li>
 		</ul>
 	</li>
 	<li id="details-spell-insect-plague">
 		<span class="wutc-detail-item">Insect Plague</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Innumerable evils must be laid upon the caster, who is willing to give their flesh up as a brood-chamber for the imminent swarm. They are destroyed utterly in the process.</li>
+			<li><strong>One Use:</strong> Innumerable evils are laid upon you, who is willing to give their flesh up as a brood-chamber for the imminent swarm. You are destroyed utterly in the process.</li>
 			<li><strong>Effects:</strong> A thick carpet of insects spreads across the land. All organic material is devoured. The sun is blotted out. Starvation follows. The insects die a cannibal frenzy, devouring one another as all else is gone beneath wing and limb.</li>
 		</ul>
 	</li>
 	<li id="details-spell-invisibility">
 		<span class="wutc-detail-item">Invisibility</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Powdered silver is cast into the air. The effect persists until the caster does not disturb the particles with their breath.</li>
-			<li><strong>1/day:</strong> The eyes of three members of royalty must be formed into a necklace.</li>
+			<li><strong>One Use:</strong> Cast powdered silver into the air. The effect persists until your disturb the particles with your breath.</li>
+			<li><strong>1/day:</strong> Form eyes of three members of royalty into a necklace.</li>
+			<li><strong>Effects:</strong> You cannot be seen. Taking a hostile action renders you visible again.</li>
 			<li><strong>Permanent:</strong> Infection from an unseen. Spread through bite.</li>
-			<li><strong>Effects:</strong> As long as the caster takes no hostile action, they cannot be seen.</li>
 		</ul>
 	</li>
 	<li id="details-spell-knock">
 		<span class="wutc-detail-item">Knock</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A valuable key of unknown origin and use is broken.</li>
+			<li><strong>One Use:</strong> Break a valuable key of unknown origin.</li>
 			<li><strong>1/day:</strong> A small pact with the Opener of the Way to capture and imprison at least one human being a month.</li>
 			<li><strong>Effects:</strong> A single portal becomes unlocked.</li>
 		</ul>
@@ -1713,17 +1713,17 @@
 	<li id="details-spell-levitate">
 		<span class="wutc-detail-item">Levitate</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A bar of goose-fat, hemlock and nightshade berries is smeared on the body. A feather of silver is crushed.</li>
-			<li><strong>Effects:</strong> The caster levitates up to 6 inches above the ground</li>
+			<li><strong>One Use:</strong> Smear a bar of goose-fat, hemlock and nightshade berries on your body. Crush a feather of silver.</li>
+			<li><strong>Effects:</strong> You levitate up to 6 inches above the ground.</li>
 			<li><strong>Duration:</strong> 6 turns</li>
 		</ul>
 	</li>
 	<li id="details-spell-light">
 		<span class="wutc-detail-item">Light</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Charcoal from an arson is crushed and wet into a paste. The paste carries the enchantment.</li>
-			<li><strong>1/day:</strong> Drill a hole into the top of the skull to let the light in&mdash;and then pour it forth from the mouth.</li>
-			<li><strong>Effects:</strong> Light, as if cast by a torch, flows from an object chosen by the caster.</li>
+			<li><strong>One Use:</strong> Crush charcoal from an arson and wet it into a paste, which carries the enchantment.</li>
+			<li><strong>1/day:</strong> Drill a hole into the top of your skull and let the light in&mdash;and then pour it forth from your mouth.</li>
+			<li><strong>Effects:</strong> Light&mdash;as if cast by a torch&mdash;flows from an object of your choice.</li>
 			<li><strong>Duration:</strong> 12 hours (72 turns)</li>
 		</ul>
 	</li>
@@ -1732,43 +1732,44 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Burn the ring-finger of a cloud giant, and blow the ash at the target.</li>
 			<li><strong>1/day:</strong> Feed your right hand to a wraith dwelling beneath a riven oak.</li>
-			<li><strong>Effects:</strong> A bolt of lightning is flung in a line, passing through anyone in its path. Those in the bolt's path take 4d6 damage, or half as much on a successful dodging <a href="#saves">save</a>. There is a 4-in-6 chance the bolt bounces of any hard surface, doubling back.</li>
+			<li><strong>Effects:</strong> You fling a bolt of lightning in a line. The bolt passes through creatures in its path, dealing 4d6 damage. Creatures that succeed a dodging <a href="#saves">save</a> take half as much damage. There is a 4-in-6 chance the bolt bounces of any hard surface, doubling back.</li>
 		</ul>
 	</li>
 	<li id="details-spell-locate-object">
 		<span class="wutc-detail-item">Locate Object</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The skull of a bloodhound (or similar scenthound) is filled with the skulls of nine different species of rodent. This rattle is then shaken, the sound an indicator of direction.</li>
-			<li><strong>Effects:</strong> The caster gains an intuitive sense of where a known or thoroughly described object is, able to unerringly navigate towards it for 3 days. In the case a general type of object, they are led to the nearest instance of it.</li>
+			<li><strong>One Use:</strong> Fill the skull of a bloodhound (or similar scenthound) is with the skulls of nine different species of rodent. Shake this rattle&mdash;the sound is an indicator of direction.</li>
+			<li><strong>Effects:</strong> You gain an intuitive sense of where a known or thoroughly described object is, and can unerringly navigate towards it. In the case a general type of object, you are led to the nearest instance of it.</li>
+			<li><strong>Duration:</strong> 3 days</li>
 		</ul>
 	</li>
 	<li id="details-spell-magic-jar">
 		<span class="wutc-detail-item">Magic Jar</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A soul-vessel is prepared, requiring a huge investment in research, blood and treasure. The transferral ritual takes a full month, during which the body must be maintained by others&mdash;any lapse in concentration causes failure. This one of the paths a man could walk to leave mortality behind.</li>
-			<li><strong>Effects:</strong> The soul of the caster is moved to the soul-vessel. The spirit can leave and attempt to animate soulless bodies or vie with other souls for control of their own bodies. In this case, both make a warding <a href="#saves">save</a>. If one succeeds and the other fails, they gain (or retain) control of the body. If both fail, the body dies, leaving only the caster. If both succeed, they now cohabitate the body.</li>
+			<li><strong>One Use:</strong> Prepare a soul-vessel, requiring a huge investment in research, blood and treasure. The transferral ritual takes one month, during which your body must be maintained by others&mdash;any lapse in concentration causes failure. This one of the paths a man could walk to leave mortality behind.</li>
+			<li><strong>Effects:</strong> The soul of the caster is moved to the soul-vessel. Your spirit can leave and attempt to animate soulless bodies, or vie with other souls for control of their own bodies. In this case, you and a creature both make a warding <a href="#saves">save</a>. If one of you succeeds and the other fails, the victor gains (or retains) control of the body. If you both fail, the body dies, leaving only you. If both of you succeed, you cohabitate the body.</li>
 		</ul>
 	</li>
 	<li id="details-spell-move-earth">
 		<span class="wutc-detail-item">Move Earth</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The hateful, parasitic peak crown flower is planted in the earth, where one wishes the earth to move to. The earth moves to destroy it, hills converging like wolves.</li>
+			<li><strong>One Use:</strong> Plant the hateful, parasitic peak crown flower in the earth, where you wish the earth to move to. The earth moves to destroy it, hills converging like wolves.</li>
 			<li><strong>Effects:</strong> 1d6 hills or equivalent move to the location violently, destroying structures and disrupting armies.</li>
 		</ul>
 	</li>
 	<li id="details-spell-neutralize-poison">
 		<span class="wutc-detail-item">Neutralize Poison</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> Bronze is poured over a de-fanged venomous snake. The resulting wand is waved at the envenomed object.</li>
-			<li><strong>1/day:</strong> A poison-gland from a live serpent, worn around the belt and milked every morning, can drain the poison from objects. This fetish is useless if the donor serpent dies.</li>
+			<li><strong>One Use:</strong> Pour bronze over a de-fanged venomous snake. Wave the resulting wand at the envenomed object.</li>
+			<li><strong>1/day:</strong> Wear a poison-gland from a live serpent around your belt. Milk it each morning, and it will drain the poison from objects. The fetish becomes useless if the donor serpent dies.</li>
 			<li><strong>Effects:</strong> An envenomed object or creature is purified, rendered harmless.</li>
 		</ul>
 	</li>
 	<li id="details-spell-passwall">
 		<span class="wutc-detail-item">Passwall</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> A fragment of a chisel from lost Uruk is used to mark a passage. Close your eyes and wait 1 minute.</li>
-			<li><strong>Effects:</strong> Creates a permanent tunnel up to 5 feet in diameter and 15 feet deep.</li>
+			<li><strong>One Use:</strong> Mark a passage with a fragment of a chisel from lost Uruk. Close your eyes and wait for one minute.</li>
+			<li><strong>Effects:</strong> You create a permanent tunnel up to 5 feet in diameter and 15 feet deep.</li>
 		</ul>
 	</li>
 	<li id="details-spell-phantasm">
@@ -1804,8 +1805,8 @@
 	<li id="details-spell-protection">
 		<span class="wutc-detail-item">Protection</span>
 		<ul class="list-unstyled">
-			<li><strong>One Use:</strong> The caster anoints the target with blessed water. The origin of the blessing determines whom the protection is effective against.</li>
-			<li><strong>Effects:</strong> Those the protection is against have a &minus;2 penalty on <a href="#attacking">attacks</a> against the protected.</li>
+			<li><strong>One Use:</strong> The caster anoints the target with blessed water. The origin of the blessing determines what creature the protection abjures.</li>
+			<li><strong>Effects:</strong> If an abjured creature <a href="#attacking">attacks</a> a protected creature, they do so with a &minus;2 penalty.</li>
 			<li><strong>Duration:</strong> 6 turns</li>
 		</ul>
 	</li>
@@ -1848,7 +1849,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Mud gathered from an ocean trench is flung.</li>
 			<li><strong>1/day:</strong> A herd of one hundred and one lamed horses must be kept alive by the caster or their estate.</li>
-			<li><strong>Effects:</strong> A single target must succeed on a warding <a href="#saves">save</a> or be slowed, acting only every other round.</li>
+			<li><strong>Effects:</strong> A single target must succeed a warding <a href="#saves">save</a> or be slowed, acting only every other round.</li>
 			<li><strong>Duration:</strong> 3 turns</li>
 		</ul>
 	</li>
@@ -1951,7 +1952,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> A huge golden web of delicate threads is folded back into a small nugget. As it is thrown, it boils away, revealing the web it represents.</li>
 			<li><strong>1/day:</strong> An infestation of spiders in the blood&mdash;introduced in egg-form and kept sated with sacrifice.</li>
-			<li><strong>Effects:</strong> A ball of web explodes outwards&mdash;all in a 30-foot area must succeed on a dodging <a href="#saves">save</a> or be stuck fast in magically regenerating web, which fights to keep them immobile. The web is highly flammable. Giants are their like are strong enough to ignore the web.</li>
+			<li><strong>Effects:</strong> A ball of web explodes outwards&mdash;all in a 30-foot area must succeed a dodging <a href="#saves">save</a> or be stuck fast in magically regenerating web, which fights to keep them immobile. The web is highly flammable. Giants are their like are strong enough to ignore the web.</li>
 			<li><strong>Duration:</strong> 3 turns</li>
 		</ul>
 	</li>
@@ -2028,7 +2029,7 @@
 			<li><strong>Bird:</strong> The blood of a bird smeared over the face guarantees freedom from magical chains and bindings. +6 warding against mobility-reducing effects.</li>
 			<li><strong>Cat:</strong> Taken from a black cat with nary a speck of white, and daubed at the arm-pits, groin and neck, a counter-charm. +2 warding.</li>
 			<li><strong>Child:</strong> An extreme rite reserved by druids. The life of one for the protection of another. +6 warding.
-			<li><strong>Dog:</strong> Douse the hands and lips in the blood of a hound and know your form and freedom. +3 warding against Body-Affecting spells.</li>
+			<li><strong>Dog:</strong> Douse the hands and lips in the blood of a hound and know your form and freedom. +3 warding against body-affecting spells.</li>
 			<li><strong>Fish:</strong> The alien blood of fish, rubbed into the scalp, confuses and repels the spirits of the land. +2 warding against land-bound spirits.</li>
 			<li><strong>Horse:</strong> A bath of horse-blood marks a warrior as ready to die by weapons, not sorcery. +3 warding against mortal magic users.</li>
 			<li><strong>Whale:</strong> The blood of the deep, rich in evil and malice, drunk til the belly rejects it and vomits it back out as pink foam. +4 warding.</li>
@@ -2045,8 +2046,10 @@
 	<li id="details-ward-chanting">
 		<span class="wutc-detail-item">Chanting</span>
 		<ul class="list-unstyled">
-			<li><strong>Description:</strong> Chanting the names of saints, the titles of a singular god or the names of a pantheon grant a modicum of protection. This must be done for 3 concurrent rounds to have an effect.</li>
-			<li><strong>Effects:</strong> +1 warding. Such Chanting can be done for d6 rounds + 1 for each point of Constitution above 10.</li>
+			<li><strong>Description:</strong> Chanting the names of saints, the titles of a singular god or the names of a pantheon grant a modicum of protection.</li>
+			<li><strong>Beginning a Chant:</strong> You must chant for 3 consecutive rounds for the chant to take effect.</li>
+			<li><strong>Effects:</strong> +1 warding.</li>
+			<li><strong>Duration:</strong> You can chant for 1d6 1 rounds plus 1 additional round for each point of <a href="#characters">Constitution</a> above 10.</li>
 		</ul>
 	</li>
 	<li id="details-ward-cold-stones">
@@ -2279,7 +2282,7 @@
 
 </div>
 <div class="pt-3 pb-3 text-center">
-	<p>&copy; 2024 Cody M. &amp; Old Gus</p>
+	<p>&copy; 2024 Cody M. and Old Gus</p>
 	<p><a href="mailto:partario.flynn@gmail.com">partario.flynn@gmail.com</a></p>
 </div>
 </main>
