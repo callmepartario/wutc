@@ -153,6 +153,8 @@ button.theme-dark, a.btn.theme-dark {
 img.theme-light { display: block !important; }
 img.theme-dark { display: block !important; }
 
+.theme-dark img.wutc-image { filter: invert(1); }
+
 /* header overrides */
 h1 { 
 	font-family: Aladin, 'Times New Roman', Times, serif;
