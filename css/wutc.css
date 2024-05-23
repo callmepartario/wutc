@@ -193,6 +193,8 @@ h6 {  font-size: 1.25rem; }
 	margin-bottom: 0.5rem;
 }
 
+.wutc-symbol { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
 /* anchor link iconography - position */
 h2 a.wutc-header-anchor,
 h3 a.wutc-header-anchor,
