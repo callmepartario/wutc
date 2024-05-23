@@ -39,7 +39,7 @@
 						<li><a class="dropdown-item wutc-nav" href="#characters">Character Creation</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#weapons">Weapons</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#armor">Armor</a></li>
-						<li><a class="dropdown-item wutc-nav" href="#supplies-and-encumbrance">Supplies</a></li>
+						<li><a class="dropdown-item wutc-nav" href="#supplies">Supplies</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#livestock">Livestock</a></li>
 					</ul>
 				</li>
@@ -87,7 +87,7 @@
 	Wolves Upon the Coast
 	<span class="wutc-subtitle">The Unofficial Player's Guide</span>
 </h1>
-<p class="small text-center">version 0.1m (2024-05-22)</p>
+<p class="small text-center">version 0.1n (2024-05-23)</p>
 <ul class="list-inline text-center">
 	<!--
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="/pdfs/">Download PDF</a></li>
@@ -140,13 +140,11 @@
 		<tr>
 			<th class="fw-normal" scope="row">Strength</th>
 			<td>Physical power</td>
-			<!-- remove "raw" -->
 			<td>+1 to <a href="#attacking">attacks</a></td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Agility</th>
 			<td>Deftness</td>
-			<!-- remove "of action" -->
 			<td>+1 to dodging <a href="#saves">saves</a></td>
 		</tr>
 		<tr>
@@ -159,15 +157,13 @@
 <p>You begin with:</p>
 <ul>
 	<li>3d6 &times; 10 hacksilver (sp) worth of equipment. Anything not spent is lost.</li>
-	<li>1d6 hit dice (HD), rolled for starting hit points (HP).</li>
+	<li>1d6 hit dice (HD). Roll your HD to determine your starting hit points (HP).</li>
 	<li>+2 to <a href="#attacking">attacks</a>.</li>
-	<li>Knowledge of 1d6 &divide; 2 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare your character knows a language until encountered in play.</li>
-	<!-- edits above -->
+	<li>Knowledge of half of 1d6 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare you know a language until you encounter it.</li>
 </ul>
 <p>The party begins with:</p>
 <ul>
 	<li>1 karvi, a small raiding <a href="#vessels">vessel</a>.</li>
-	<!-- vessel vs. ship -->
 	<li>A crew of 12 fellow ex-thralls who look to you for leadership.</li>
 	<li>Food and water for four days (including the crew).</li>
 </ul>
@@ -207,12 +203,10 @@
 	</tbody>
 </table></div>
 <ul>
-	<li><strong>Exploding.</strong> If you roll a 6 on a damage die, roll another d6 and add it to the total damage.</li>
+	<li><strong>Exploding (*).</strong> If you roll a 6 on a damage die, roll another d6 and add it to the total damage.</li>
 	<li><strong>Reach (&dagger;).</strong> You can attack from behind another creature.</li>
-	<li><strong>Riposte.</strong> If an <a href="#attacking">attack</a> roll against you is equal to or less than 7 (not counting your AC), you can immediately counter-attack. The number in parentheses indicates how many times you can do this each round.</li>
-	<li><strong>Two-Handed (&ddagger;).</strong> Attacking requires 2 hands.</li>
-	<!-- edits above -->
-	<!-- parentheses (plural) throughout -->
+	<li><strong>Riposte.</strong> If an <a href="#attacking">attack</a> roll against you is less than 8 (not counting your AC), you can immediately counter-attack. The number in parentheses indicates how many times you can do this each round.</li>
+	<li><strong>Two-Handed (&ddagger;).</strong> Attacking requires two hands.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Weapons</caption>
@@ -222,7 +216,6 @@
 			<th class="vertical-align-bottom text-end" scope="col">Cost</th>
 			<th class="vertical-align-bottom" scope="col">Weight</th>
 			<th class="vertical-align-bottom" scope="col">Special Properties</th>
-			<!-- special properties -->
 		</tr>
 	</thead>
 	<tbody>
@@ -255,15 +248,12 @@
 			<td class="text-end">40</td>
 			<td>Heavy</td>
 			<td>On a killing blow, attack again.</td>
-			<!-- strike to blow -->
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Handaxe</th>
 			<td class="text-end">6</td>
-			<!-- missing price -->
 			<td>Light</td>
-			<td>Throwable. If you deal at least 4 damage with a throw, it bounces. Attack again.</td>
-			<!-- edits -->
+			<td>Throwable. If you deal at least 4 damage is dealt by your throw, it bounces. Attack again.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Javelin</th>
@@ -275,7 +265,7 @@
 			<th class="fw-normal" scope="row">Longbow &ddagger;</th>
 			<td class="text-end">30</td>
 			<td>Medium</td>
-			<td>For each round spent aiming, gain +1 to your next attack.</td>
+			<td>For each round spent aiming, gain +1 to your attack.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Mace</th>
@@ -283,15 +273,12 @@
 			<td>Medium</td>
 			<td>+2 to attacks against metallic or rigid targets (including armor).</td>
 		</tr>
-		<!-- alphabetize-->
 		<tr>
 			<th class="fw-normal" scope="row">Polearm &dagger;&ddagger;</th>
 			<td class="text-end">15</td>
 			<td>Heavy</td>
-			<td>Choose an adjacent ally. &minus;2 to attacks against them.</td>
-			<!-- like shields, is this better couched as AC? -->
+			<td>Choose an adjacent ally. Creatures attacking your ally do so with a &minus;2 penalty.</td>
 		</tr>
-		<!-- alphabetize-->
 		<tr>
 			<th class="fw-normal" scope="row">Poleaxe &ddagger;</th>
 			<td class="text-end">20</td>
@@ -303,7 +290,6 @@
 			<td class="text-end">5</td>
 			<td>Light</td>
 			<td>Automatically hit targets that fail a dodging <a href="#saves">save</a> on approach.</td>
-			<!-- "dodging", change "strike" to "hit" -->
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Shortbow &ddagger;</th>
@@ -336,18 +322,16 @@
 			<td>Riposte (1).</td>
 		</tr>
 		<tr>
-			<th class="fw-normal" scope="row">Two-handed axe &ddagger;</th>
+			<th class="fw-normal" scope="row">Two-handed axe *&ddagger;</th>
 			<td class="text-end">25</td>
 			<td>Heavy</td>
-			<td>Exploding. +1 to attacks against you.</td>
-			<!-- edit - should we couch this as a modification to player AC instead for smoother gameplay? -->
+			<td>+1 to <a href="#attacking">attacks</a> against you.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Warhammer &ddagger;</th>
 			<td class="text-end">25</td>
 			<td>Heavy</td>
-			<td>Forces physique save to push back a number of feet equal to damage dealt minus target hit dice.</td>
-			<!-- spell minus (we used "plus" elsewhere)-->
+			<td>Target must succeed a physique save or be pushed back a number of feet equal to damage dealt minus target HD.</td>
 		</tr>
 	</tbody>
 </table></div>
@@ -357,7 +341,6 @@
 		<tr>
 			<th class="vertical-align-bottom" scope="col">Ammunition</th>
 			<th class="vertical-align-bottom text-end" scope="col">Cost</th>
-			<!-- special vs. properties? -->
 		</tr>
 	</thead>
 	<tbody>
@@ -371,13 +354,11 @@
 		</tr>
 	</tbody>
 </table></div>
-<!-- surely arrows and sling bullets don't count as one item each? -->
 <hr>
 
 <h2 id="armor">Armor<a class="wutc-header-anchor" href="#armor" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
 	<li><strong>Shields.</strong> A shield costs 15 sp. Equipping a shield reduces your AC by 1. When you are hit by a conventional attack but before damage is rolled, you can sunder your shield to negate the damage, destroying the shield.</li>
-	<!-- edits, is "but before damage is rolled" accurate? -->
 </ul>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Armor</caption>
@@ -414,18 +395,17 @@
 			<td class="text-center">3</td>
 			<td class="text-center">&minus;2</td>
 		</tr>
-		<!-- remove shield from the table, list it after the table instead -->
 	</tbody>
 </table></div>
 <hr>
 
 <h2 id="supplies-and-encumbrance">Supplies and Encumbrance<a class="wutc-header-anchor" href="#supplies-and-encumbrance" title="Permalink" aria-hidden="true"></a></h2>
+<h3 id="supplies">Supplies<a class="wutc-header-anchor" href="#supplies" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Capacity.</strong> You can carry a number of items equal to your AC plus 5. Equipped items don't count towards this limit.</li>
 	<li><strong>Encumbrance.</strong> If you exceed your limit, you are encumbered. You move at half-speed, and are prone to accidents. Carrying more than twice your limit can result in exhaustion.</li>
 	<li><strong>Coin.</strong> 250 coins count as one item.</li>
 </ul>
-<!-- edits above -->
 <!-- desktop viewports -->
 <div class="d-none d-md-block d-sm-none">
 	<div class="row">
@@ -452,11 +432,11 @@
 						<td class="text-end">5</td>
 					</tr>
 					<tr>
-						<td>Box, large iron</td>
+						<td>Box, iron, large</td>
 						<td class="text-end">30</td>
 					</tr>
 					<tr>
-						<td>Box, small iron</td>
+						<td>Box, iron, small</td>
 						<td class="text-end">15</td>
 					</tr>
 					<tr>
@@ -483,7 +463,6 @@
 						<td>Chest, wood, large</td>
 						<td class="text-end">15</td>
 					</tr>
-					<!-- "wooden" to "wood" throughout this table -->
 					<tr>
 						<td>Chest, wood, small</td>
 						<td class="text-end">8</td>
@@ -504,7 +483,6 @@
 						<td>Flint and steel</td>
 						<td class="text-end">5</td>
 					</tr>
-					<!-- remove ampersand -->
 					<tr>
 						<td>Grappling Hook</td>
 						<td class="text-end">10</td>
@@ -513,7 +491,6 @@
 						<td>Hammer and wood stakes</td>
 						<td class="text-end">5</td>
 					</tr>
-					<!-- will "wood" fit - given "iron spike" maybe this is important. -->
 					<tr>
 						<td>Laboratory (portable)</td>
 						<td class="text-end">150</td>
@@ -528,7 +505,6 @@
 					</tr>
 					<tr>
 						<td>Lock picks</td>
-						<!-- remove hyphen -->
 						<td class="text-end">25</td>
 					</tr>
 					<tr>
@@ -572,7 +548,6 @@
 						<td>Pole, 10-foot</td>
 						<td class="text-end">5</td>
 					</tr>
-					<!-- spell out -foot -->
 					<tr>
 						<td>Ration, dry day</td>
 						<td class="text-end">5</td>
@@ -585,12 +560,10 @@
 						<td>Rope, silk, 50-foot</td>
 						<td class="text-end">70</td>
 					</tr>
-					<!-- spell out -foot -->
 					<tr>
 						<td>Rope, hemp, 50-foot</td>
 						<td class="text-end">5</td>
 					</tr>
-					<!-- spell out -foot -->
 					<tr>
 						<td>Sack</td>
 						<td class="text-end">1</td>
@@ -627,7 +600,6 @@
 						<td>Spike, iron</td>
 						<td class="text-end">3</td>
 					</tr>
-					<!-- check name for alpha order, consider moving to "iron spike" so these tables break down by A-L and M-Z ? If so, attend to livestock similarly -->
 					<tr>
 						<td>Tent</td>
 						<td class="text-end">15</td>
@@ -675,11 +647,11 @@
 					<td class="text-end">5</td>
 				</tr>
 				<tr>
-					<td>Box, large iron</td>
+					<td>Box, iron, large</td>
 					<td class="text-end">30</td>
 				</tr>
 				<tr>
-					<td>Box, small iron</td>
+					<td>Box, iron, small</td>
 					<td class="text-end">15</td>
 				</tr>
 				<tr>
@@ -1045,8 +1017,7 @@
 
 <h2 id="resolution-tools">Resolution Tools<a class="wutc-header-anchor" href="#resolution-tools" title="Permalink" aria-hidden="true"></a></h2>
 <h3 id="tests">Tests<a class="wutc-header-anchor" href="#tests" title="Permalink" aria-hidden="true"></a></h3>
-<p>The Referee might determine your <a href="#characters">characteristics</a> are tested. To succeed, roll under your characteristic, depending on the difficulty of the task (determined by the Referee). Items or abilities might increase or decrease the number of dice.</p>
-<!-- what abilities? -->
+<p>The Referee might determine your <a href="#characters">characteristics</a> are tested. To succeed, roll under your characteristic, depending on the difficulty of the task (determined by the Referee).</p>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Tests</caption>
 	<thead>
@@ -1072,8 +1043,7 @@
 </table></div>
 <hr>
 <h3 id="saves">Saves<a class="wutc-header-anchor" href="#saves" title="Permalink" aria-hidden="true"></a></h3>
-<p>In response to action or need for you to muster your defenses, the Referee might call for you to roll a d20 for a save. The target number you must meet or exceed depends on the save:</p>	
-<!-- edits -->
+<p>In response to action or the need for you to muster your defenses, the Referee might call for you to roll a d20 for a save. The target number you must meet or exceed depends on the save:</p>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Saves</caption>
 	<thead>
@@ -1081,7 +1051,6 @@
 			<th class="vertical-align-bottom" scope="col">Save</th>
 			<th class="vertical-align-bottom" scope="col">Use</th>
 			<th class="vertical-align-bottom text-center" scope="col">Target Number</th>
-			<!-- add "number" -->
 		</tr>
 	</thead>
 	<tbody>
@@ -1102,10 +1071,8 @@
 		</tr>
 	</tbody>
 </table></div>
-<!-- remove + -->
 <div class="wutc-sidebar theme-light pt-3 pb-1 ps-3 pe-3 mt-0 mb-3">
 	<p>High <a href="#characters">characteristics</a>, <a href="#warding">wards</a>, or magic items can grant a bonus to saves.</p>
-	<!-- add wards -->
 </div>
 <hr>
 <h3 id="combat">Combat<a class="wutc-header-anchor" href="#combat" title="Permalink" aria-hidden="true"></a></h3>
@@ -1113,34 +1080,29 @@
 <ul>
 	<li><strong>Rounds.</strong> Each round represents about 6 seconds.</li>
 	<li><strong>Initiative.</strong> Roll a d10. If the result is equal to or less than your AC, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to reroll initiative each round.</li>
-	<!-- edits -->
+	<!-- d10 vs. % chance -->
 </ul>
 <h4 id="attacking">Attacking<a class="wutc-header-anchor" href="#attacking" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Attacks.</strong> Roll 1d20 plus attack bonus, any modifiers, and the target's AC. If the result is 20+, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>).</li>
-	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 rounds, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies-and-encumbrance">bandages</a>). Anyone else reduced to 0 HP dies.</li>
-	<!-- edits -->
+	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 rounds, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies">bandages</a>). A creature reduced to 0 HP dies.</li>
 </ul>
 <h4 id="combat-complications">Combat Complications<a class="wutc-header-anchor" href="#combat-complications" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Unaware.</strong> Mortals are instantly slain if you can ensure a killing blow.</li>
 	<li><strong>Prone.</strong> Melee attacks automatically hit.</li>
 	<li><strong>Flanked.</strong> +2 to attacks for each other person attacking the same target.</li>
-	<!-- "flank" to "flanked" -->
 	<li><strong>Mounted.</strong> +3 to attacks against unmounted foes, and deal 2d6 with a weapon that can be couched (held horizontally perpendicular to your body).</li>
-	<!-- "attack" to "attacks" -->
 	<!-- seems so weird this is not a weapon property. could we get a bespoke list? is it a straight 2d6 roll, ignoring the usual die discards of heavy weapons? -->
 </ul>
 <h4 id="creatures">Creatures<a class="wutc-header-anchor" href="#creatures" title="Permalink" aria-hidden="true"></a></h4>
 <p>Creatures add half their HD to their <a href="#attacking">attacks</a>.</p>
-<!-- replace all "attack rolls" with simpler "attacks" -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Creature Attacks</caption>
 	<thead>
 		<tr>
 			<th class="vertical-align-bottom text-center" scope="col">HD</th>
 			<th class="vertical-align-bottom text-center" scope="col">Attacks Each Round</th>
-			<!-- remove "number of" -->
 		</tr>
 	</thead>
 	<tbody>
@@ -1159,14 +1121,12 @@
 	</tbody>
 </table></div>
 <p>Some creatures have bonuses to their <a href="#saves">saves</a>.</p>
-<!-- add text -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Creature Saves</caption>
 	<thead>
 		<tr>
 			<th class="vertical-align-bottom" scope="col">Creature Type</th>
 			<th class="vertical-align-bottom" scope="col">Save Bonus</th>
-			<!-- remove "number of" -->
 		</tr>
 	</thead>
 	<tbody>
@@ -1184,7 +1144,6 @@
 		</tr>
 	</tbody>
 </table></div>
-<!-- table this -->
 <hr>
 <h3 id="healing">Healing<a class="wutc-header-anchor" href="#healing" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
@@ -1235,8 +1194,7 @@
 	<li>a leader's death, surrender, or retreat</li>
 	<li>being ambushed</li>
 	<li>presence of massive or horrific foes</li>
-	<li>a raging <a href="#naval-combat">fire</a> aboard a <a href="#vessels">vessel</a>
-	<!-- edits above -->
+	<li>a raging <a href="#naval-combat">fire</a> on a <a href="#vessels">vessel</a>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Morale Checks</caption>
@@ -1261,7 +1219,6 @@
 		</tr>
 	</tbody>
 </table></div>
-<!-- math symbols, remove periods-->
 <hr>
 
 <h2 id="advancement">Advancement<a class="wutc-header-anchor" href="#advancement" title="Permalink" aria-hidden="true"></a></h2>
@@ -1287,9 +1244,9 @@
 	<thead>
 		<tr>
 			<th class="vertical-align-bottom" scope="col">Hireling</th>
-			<th class="vertical-align-bottom text-end" scope="col">Cost Each Day</th>
+			<th class="vertical-align-bottom text-end" scope="col">Cost/Day</th>
 			<th class="vertical-align-bottom text-center" scope="col">AC</th>
-			<th class="vertical-align-bottom text-center" scope="col">HD</th>
+			<th class="vertical-align-bottom text-center" scope="col">HD + HP</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1297,7 +1254,7 @@
 			<th class="fw-normal" scope="row">Non-combat</th>
 			<td class="text-end">2</td>
 			<td class="text-center">&mdash;</td>
-			<td class="text-center">1</td>
+			<td class="text-center">1 + 0</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Skirmisher &ddagger;</th>
@@ -1320,7 +1277,7 @@
 		<tr>
 			<th class="fw-normal" scope="row">Armored Footman &dagger;</th>
 			<td class="text-end">20</td>
-			<td class="text-center">4</td>
+			<td class="text-center">5</td>
 			<td class="text-center">1 + 2</td>
 		</tr>
 		<tr>
@@ -1336,11 +1293,9 @@
 <ul>
 	<li><strong>Distance.</strong> Map hexes are 6 miles across.</li>
 </ul>
-<!-- add this in. it's important for sea and land travel. -->
 <hr>
 <h3 id="abreast-the-sea">Abreast the Sea<a class="wutc-header-anchor" href="#abreast-the-sea" title="Permalink" aria-hidden="true"></a></h3>
 <h4 id="vessels">Vessels<a class="wutc-header-anchor" href="#vessels" title="Permalink" aria-hidden="true"></a></h4>
-<!-- move this section to before wind -->
 <ul>
 	<li><strong>Light Vessel (&dagger;).</strong> Doesn't require a port; can be beached.</li>
 	<li><strong>Hit Dice.</strong> Roll for vessel HP.</li>
@@ -1348,7 +1303,6 @@
 	<li><strong>Cargo.</strong> <a href="#supplies-and-encumbrance">Encumbrance</a> capacity.</li>
 	<li><strong>Crew.</strong> Parentheses indicates crew required to be <a href="#companions-and-hirelings">marines</a>.</li>
 	<li><strong>Value.</strong> The ransom for return of a captured vessel (not including recovered cargo). Purchasing a vessel is triple the ransom value.</li>
-	<!-- edits to above -->
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Vessels</caption>
@@ -1385,7 +1339,6 @@
 			<td class="text-center">6 (4)</td>
 			<td class="text-end">60</td>
 			<td class="text-center">8&ndash;24</td>
-			<!-- remove parens, karvi does not require marines -->
 			<td class="text-end">1000</td>
 		</tr>
 		<tr>
@@ -1406,7 +1359,6 @@
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Galley, small</th>
-			<!-- decapizalist small -->
 			<td class="text-center">6</td>
 			<td class="text-center">8 (3)</td>
 			<td class="text-end">160</td>
@@ -1415,7 +1367,6 @@
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Galley, large</th>
-			<!-- decapizalist small -->
 			<td class="text-center">6</td>
 			<td class="text-center">9 (5)</td>
 			<td class="text-end">240</td>
@@ -1424,7 +1375,6 @@
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Skeid &dagger;</th>
-			<!-- decapizalist small -->
 			<td class="text-center">9</td>
 			<td class="text-center">9 (5)</td>
 			<td class="text-end">240</td>
@@ -1436,7 +1386,6 @@
 <h4 id="wind">Wind<a class="wutc-header-anchor" href="#wind" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Movement Bonus.</strong> If the wind is directly behind your <a href="#vessels">vessel</a>, apply the bonus to its speed. If the wind is one step adjacent, apply the number in parentheses instead. For example, a strong wind blowing north-east modifies the speed of a vessel traveling north by +1.</li>
-	<!-- update for parens and other text -->
 	<li><strong>Raise Sails.</strong> Ignore bonuses and rely on oars.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
@@ -1464,7 +1413,6 @@
 			<td>Strong</td>
 			<td class="text-center">+2 (+1)</td>
 		</tr>
-		<!-- remove "breeze" -->
 		<tr>
 			<th class="fw-normal text-center" scope="row">12</th>
 			<td>Gale or <a href="#storms">storm</a></td>
@@ -1507,11 +1455,9 @@
 <ul>
 	<li><strong>Visibility.</strong> Up to 1 day's travel away.</li>
 	<li><strong>Disorientation.</strong> 4-in-6 chance of becoming lost.</li>
-	<!-- move up, this is more likely -->
 	<li><strong>Capsizing.</strong> 30% chance each day. If capsized, loose cargo is lost and there is a 40% chance the <a href="#vessels">vessel</a> begins <a href="#sinking">sinking</a>.</li>
 </ul>
 <h4 id="becoming-lost-at-sea">Becoming Lost at Sea<a class="wutc-header-anchor" href="#becoming-lost-at-sea" title="Permalink" aria-hidden="true"></a></h4>
-<!-- title edit (uniqueness) -->
 <ul>
 	<li><strong>Landmarks.</strong> 2-in-6 chance when no landmarks are visible. Under clear skies, adjacent <a href="#travel">hexes</a> and mountains up to 4 hexes away are visible.</li>
 	<li><strong>Maps.</strong> The Referee might hide the map and continue play without it until you re-establish your position. While lost, your <a href="#vessels">vessel</a> moves in a random direction.</li>
@@ -1519,10 +1465,8 @@
 <h4 id="naval-combat">Naval Combat<a class="wutc-header-anchor" href="#naval-combat" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Naval Combat Turns.</strong> Naval combat turns are 1 minute in length.</li>
-	<!-- i guess let's go with "naval combat turns", these are not round -->
-	<li><strong>Attacking Vessels.</strong> Siege weapons and sea monsters can attack <a href="#vessels">vessel</a>. Melee attacks against vessels hit automatically. Ranged attacks treat vessels as AC 7.</li>
+	<li><strong>Attacking Vessels.</strong> Siege weapons and sea monsters can attack <a href="#vessels">vessels</a>, treating their AC as 7. Melee attacks against vessels hit automatically.</li>
 	<li><strong>Boarding.</strong> You can leap from one vessel to another by succeeding an easy Agility <a href="#tests">test</a>. <a href="#companions-and-hirelings">Marines</a> automatically succeed.</li>
-	<!-- edits -->
 	<li><strong>Ramming.</strong> Deals 1d6 damage for each remaining vessel HD, and deals 1d6 damage to your vessel.</li>
 	<li><strong>Fire.</strong> Deals 1d6 damage. On a 6, the fire increases, dealing an additional 1d6 each round. If a 1 is rolled, the fire decreases by 1d6. A fire with no damage die is extinguished.</li>
 	<li><strong>Sinking.</strong> If a vessel takes more than 5 damage from a hit, it might begin <a href="#sinking">sinking</a> (determined by the Referee).</li>
@@ -1530,7 +1474,6 @@
 <h4 id="sinking">Sinking<a class="wutc-header-anchor" href="#sinking" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Beginning to Sink.</strong> There is a 50% chance the vessel sinks within 3d6 <a href="#naval-combat">naval turns</a>. Any further sinking result halves the remaining time before the vessel sinks.</li>
-	<!-- "time left" to "remaining time", "vessel" to "ship" - maybe re-think vessel vs. ship since rafts are decidedly not ships. -->
 	<li><strong>Preventing Sinking.</strong> If half the crew works to save the vessel for 1d6 rounds, there is a 70% chance the vessel is saved. A crew under attack can't prevent sinking.</li>
 </ul>
 <h4 id="drowning">Drowning<a class="wutc-header-anchor" href="#drowning" title="Permalink" aria-hidden="true"></a></h4>
@@ -1541,7 +1484,6 @@
 	<li><strong>Speed.</strong> <a href="#travel">Hexes</a> traveled each day. Numbers in parentheses indicate riding a horse to death (2-in-6 chance of dying each day, and the steed might never ride again).</li>
 	<li><strong>Difficult Terrain.</strong> Halves movement (rounded down).</li>
 </ul>
-<!-- move above table -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Land Travel</caption>
 	<thead>
@@ -1581,14 +1523,13 @@
 <h4 id="light">Light<a class="wutc-header-anchor" href="#light" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Torches.</strong> Burn for one hour (6 turns).</li>
-	<li><strong>Lanterns.</strong> A <a href="#supplies-and-encumbrance">pint flask of oil</a> burning in a <a href="#supplies-and-encumbrance">lantern</a> lasts 4 hours (24 turns).</li>
+	<li><strong>Lanterns.</strong> A <a href="#supplies">pint flask of oil</a> burning in a <a href="#supplies">lantern</a> lasts 4 hours (24 turns).</li>
 	<li><strong>Monsters.</strong> Might be able to see in darkness.</li>
 </ul>
 <h4 id="beneath-the-earth-movement">Movement<a class="wutc-header-anchor" href="#beneath-the-earth-movement" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Cautious Movement.</strong> 240 feet each turn, and you can map, check for traps, and make close observation.</li>
 	<li><strong>Hasty Movement.</strong> 960 feet each turn, but you might become lost, stumble into ambushes, or trigger traps, especially when moving through areas you haven't fully mapped yet (determined by the Referee).</li>
-	<!-- add "you" -->
 </ul>
 <h4 id="encounters">Encounters<a class="wutc-header-anchor" href="#encounters" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
