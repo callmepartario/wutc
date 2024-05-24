@@ -87,7 +87,7 @@
 	Wolves Upon the Coast
 	<span class="wutc-subtitle">The Unofficial Player's Guide</span>
 </h1>
-<p class="small text-center">version 0.5a (2024-05-23)</p>
+<p class="small text-center">version 0.5b (2024-05-24)</p>
 <ul class="list-inline text-center">
 	<!--
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="/pdfs/">Download PDF</a></li>
@@ -122,6 +122,12 @@
 	<li><strong>Magic.</strong> <a href="#spells">Spells</a> and <a href="#warding">wards</a> define their important properties (for example, effects and duration), and have been re-worded to address "you"&mdash;the character who gathers any material components, participates in a ritual, casts a spell, or activates a ward.</li>
 	<li><strong>Rounding.</strong> Unless otherwise specified, round numbers up.</li>
 </ul>
+<h3 id="combat-timekeeping">Timekeeping<a class="wutc-header-anchor" href="#combat-timekeeping" title="Permalink" aria-hidden="true"></a></h3>
+<ul>
+	<li><strong>Rounds.</strong> Each round represents about 6 seconds.</li>
+	<li><strong>Turns.</strong> Each turn represents about 10 minutes.</li>
+	<li><strong>Naval Combat Turn.</strong> Each naval combat turn represents about 1 minute.</li>
+</ul>
 <hr>
 
 <p class="wutc-quote">The great tool of creation is the knife.</p>
@@ -142,7 +148,7 @@
 		<tr>
 			<th class="fw-normal" scope="row">Strength</th>
 			<td>Physical power</td>
-			<td>+1 to <a href="#attacking">attacks</a></td>
+			<td>+1 to <a href="#combat">attacks</a></td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Agility</th>
@@ -159,7 +165,7 @@
 <p>You begin with:</p>
 <ul>
 	<li>1d6 hit dice (HD). Roll your HD to determine your starting hit points (HP).</li>
-	<li>+2 to <a href="#attacking">attacks</a>.</li>
+	<li>+2 to <a href="#combat">attacks</a>.</li>
 	<li>Knowledge of half of 1d6 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare you know a language until you encounter it.</li>
 	<li>3d6 &times; 10 hacksilver (sp) worth of <a href="#weapons">weapons</a>, <a href="#armor">armor</a>, and <a href="#supplies">supplies</a>. Anything not spent is lost.</li>
 </ul>
@@ -177,7 +183,7 @@
 
 <h2 id="weapons">Weapons<a class="wutc-header-anchor" href="#weapons" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
-	<li><strong>Weight.</strong> A weapon's weight determines the damage dealt by a successful <a href="#attaching">attack</a>.</li>
+	<li><strong>Weight.</strong> A weapon's weight determines the damage dealt by a successful <a href="#combat">attack</a>.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Weapon Weight and Damage</caption>
@@ -204,9 +210,9 @@
 </table></div>
 <ul>
 	<li><strong>Exploding (<span class="wutc-symbol">*</span>).</strong> If you roll a 6 on a damage die, roll another d6 and add it to the total damage.</li>
-	<li><strong>Reach (<span class="wutc-symbol">&dagger;</span>).</strong> You can attack from behind another creature.</li>
-	<li><strong>Riposte.</strong> If an <a href="#attacking">attack</a> roll against you is less than 8 (not counting your AC), you can immediately counter-attack. The number in parentheses indicates how many times you can do this each round.</li>
-	<li><strong>Two-Handed (<span class="wutc-symbol">&ddagger;</span>).</strong> Attacking requires two hands.</li>
+	<li><strong>Reach (<span class="wutc-symbol">&dagger;</span>).</strong> You can <a href="#combat">attack</a> from behind another creature.</li>
+	<li><strong>Riposte.</strong> If an <a href="#combat">attack</a> roll against you is less than 8 (not counting your AC), you can immediately counter-attack. The number in parentheses indicates how many times you can do this each <a href="#timekeeping">round</a>.</li>
+	<li><strong>Two-Handed (<span class="wutc-symbol">&ddagger;</span>).</strong> <a href="#combat">Attacking</a> requires two hands.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Weapons</caption>
@@ -223,37 +229,39 @@
 			<th class="fw-normal" scope="row">Battleaxe</th>
 			<td class="text-end">10</td>
 			<td>Medium</td>
-			<td>&minus;3 damage and attack again to disarm.</td>
+			<td>&minus;3 damage and <a href="#combat">attack</a> again to disarm.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Club</th>
 			<td class="text-end">5</td>
 			<td>Light</td>
-			<td>Forgo damage and force a physique save to stun (lose a turn, +3 to attacks against).</td>
+			<td>Forgo damage and force a physique <a href="#saves">save</a> to stun (can take no action for 1 <a href="#timekeeping">round</a>, +3 to <a href="#combat">attacks</a> against).</td>
+			<!-- technically you can't act for one round, right? -->
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Dagger</th>
 			<td class="text-end">5</td>
 			<td>Light</td>
-			<td>Throwable. Heavy damage against prone.</td>
+			<td>Throwable. Heavy damage against <a href="#combat-complications">prone</a> targets.</td>
+			<!-- add targets -->
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Flail</th>
 			<td class="text-end">8</td>
 			<td>Medium</td>
-			<td>Ignores shields.</td>
+			<td>Ignores <a href="#shields">shields</a>.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Greatsword <span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">40</td>
 			<td>Heavy</td>
-			<td>On a killing blow, attack again.</td>
+			<td>On a killing blow, <a href="#combat">attack</a> again.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Handaxe</th>
 			<td class="text-end">6</td>
 			<td>Light</td>
-			<td>Throwable. If you deal at least 4 damage with your throw, it bounces. Attack again.</td>
+			<td>Throwable. If you deal at least 4 damage with your throw, it bounces. <a href="#combat">Attack</a> again.</td>
 			<!-- fix -->
 		</tr>
 		<tr>
@@ -266,19 +274,19 @@
 			<th class="fw-normal" scope="row">Longbow <span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">30</td>
 			<td>Medium</td>
-			<td>For each round spent aiming, gain +1 to your attack.</td>
+			<td>For each <a href="#timekeeping">round</a> spent aiming, gain +1 to your <a href="#combat">attack</a>.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Mace</th>
 			<td class="text-end">8</td>
 			<td>Medium</td>
-			<td>+2 to attacks against metallic or rigid targets (including armor).</td>
+			<td>+2 to <a href="#combat">attacks</a> against metallic or rigid targets (including armor).</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Polearm <span class="wutc-symbol">&dagger;</span><span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">15</td>
 			<td>Heavy</td>
-			<td>Choose an adjacent ally. Creatures attacking your ally do so with a &minus;2 penalty.</td>
+			<td>Choose an adjacent ally. Creatures <a href="#combat">attacking</a> your ally do so with a &minus;2 penalty.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Poleaxe <span class="wutc-symbol">&ddagger;</span></th>
@@ -296,7 +304,7 @@
 			<th class="fw-normal" scope="row">Shortbow <span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">15</td>
 			<td>Medium</td>
-			<td>Can attack while moving.</td>
+			<td>Can <a href="#combat">attack</a> while moving.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Shortsword</th>
@@ -314,7 +322,7 @@
 			<th class="fw-normal" scope="row">Spear <span class="wutc-symbol">&dagger;</span></th>
 			<td class="text-end">4</td>
 			<td>Medium</td>
-			<td>Can hold attack until target is within reach.</td>
+			<td>Can hold <a href="#combat">attack</a> until target is within reach.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Sword</th>
@@ -326,13 +334,13 @@
 			<th class="fw-normal" scope="row">Two-handed axe <span class="wutc-symbol">*</span><span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">25</td>
 			<td>Heavy</td>
-			<td>+1 to <a href="#attacking">attacks</a> against you.</td>
+			<td>+1 to <a href="#combat">attacks</a> against you.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Warhammer <span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">25</td>
 			<td>Heavy</td>
-			<td>Target must succeed a physique save or be pushed back a number of feet equal to damage dealt minus target HD.</td>
+			<td>Target must succeed a physique <a href="#saves">save</a> or be pushed back a number of feet equal to damage dealt minus target HD.</td>
 		</tr>
 	</tbody>
 </table></div>
@@ -367,10 +375,9 @@
 
 <h2 id="armor">Armor<a class="wutc-header-anchor" href="#armor" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
-	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#attacking">attack</a>. It affects other thing as well, including your <a href="supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
+	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#combat">attack</a>. AC affects other thing as well, including your <a href="#supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
 	<li><strong>Dodging Modifier.</strong> Your dodging <a href="#saves">saves</a> are modified depending on the armor you wear (or eschew).</li>
 	<!-- add above -->
-	<li><strong>Shields.</strong> A shield costs 15 sp. Equipping a shield reduces your AC by 1. When you are hit by a conventional attack but before damage is rolled, you can sunder your shield to negate the damage, destroying the shield.</li>
 </ul>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Armor</caption>
@@ -409,18 +416,31 @@
 		</tr>
 	</tbody>
 </table></div>
-<div class="text-center">
-	<img class="img-fluid wutc-image" src="images/shield.webp" alt="Illustration: a viking shield">	
+<hr>
+<div class="row">
+	<div class="col-md-6">
+		<h3 id="shields">Shields<a class="wutc-header-anchor" href="#shields" title="Permalink" aria-hidden="true"></a></h3>
+		<ul>
+			<li><strong>Shields.</strong> A shield costs 15 sp. Equipping a shield reduces your <a href="#armor">AC</a> by 1.</li>
+			<li><strong>Sundering.</strong> When you are hit by a conventional <a href="#combat">attack</a> but before damage is rolled, you can sunder your shield to negate the damage, destroying the shield.</li>
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<div class="text-center">
+			<img class="img-fluid wutc-image" src="images/shield.webp" alt="Illustration: a viking shield">	
+		</div>
+	</div>
 </div>
 <hr>
 
 <h2 id="supplies-and-encumbrance">Supplies and Encumbrance<a class="wutc-header-anchor" href="#supplies-and-encumbrance" title="Permalink" aria-hidden="true"></a></h2>
-<h3 id="supplies">Supplies<a class="wutc-header-anchor" href="#supplies" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Capacity.</strong> You can carry a number of items equal to your <a href="#armor">AC</a> plus 5. Equipped items don't count towards this limit.</li>
 	<li><strong>Encumbrance.</strong> If you exceed your limit, you are encumbered. You move at half-speed, and are prone to accidents. Carrying more than twice your limit can result in exhaustion.</li>
 	<li><strong>Coin.</strong> 250 coins count as one item.</li>
 </ul>
+<hr>
+<h3 id="supplies">Supplies<a class="wutc-header-anchor" href="#supplies" title="Permalink" aria-hidden="true"></a></h3>
 <div class="d-none d-md-block d-sm-none">
 	<div class="row">
 		<div class="col-sm-6">
@@ -1090,27 +1110,26 @@
 </div>
 <hr>
 <h3 id="combat">Combat<a class="wutc-header-anchor" href="#combat" title="Permalink" aria-hidden="true"></a></h3>
-<h4 id="combat-timekeeping">Timekeeping<a class="wutc-header-anchor" href="#combat-timekeeping" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Rounds.</strong> Each round represents about 6 seconds.</li>
-	<li><strong>Initiative.</strong> Roll a d10. If the result is equal to or less than your AC, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to reroll initiative each round.</li>
-</ul>
-<h4 id="attacking">Attacking<a class="wutc-header-anchor" href="#attacking" title="Permalink" aria-hidden="true"></a></h4>
-<ul>
+	<li><strong>Initiative.</strong> Roll a d10. If the result is equal to or less than your <a href="#armor">AC</a>, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to roll initiative each <a href="#timekeeping">round</a>.</li>
+	<!-- remove "reroll" -->
 	<li><strong>Attacks.</strong> Roll 1d20 plus attack bonus, any modifiers, and the target's <a href="#armor">AC</a>. If the result is at least 20, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>). Damage is subtracted from the target's HP.</li>
-	<!-- replace -->
-	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 rounds, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies">bandages</a>). A creature reduced to 0 HP dies.</li>
+	<!-- replace, condense headers -->
+	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 <a href="#timekeeping">rounds</a>, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies">bandages</a>). A creature reduced to 0 HP dies.</li>
 </ul>
 <h4 id="combat-complications">Combat Complications<a class="wutc-header-anchor" href="#combat-complications" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Unaware.</strong> Mortals are instantly slain if you can ensure a killing blow.</li>
-	<li><strong>Prone.</strong> Melee attacks automatically hit.</li>
-	<li><strong>Flanked.</strong> +2 to attacks for each other person attacking the same target.</li>
-	<li><strong>Mounted.</strong> +3 to attacks against unmounted foes, and deal 2d6 with a weapon that can be couched (held horizontally perpendicular to your body).</li>
+	<li><strong>Flanked.</strong> +2 to <a href="#combat">attacks</a> for each ally attacking the same target.</li>
+	<!-- ally instead of "other person" -->
+	<li><strong>Mounted.</strong> +3 to <a href="#combat">attacks</a> against unmounted foes, and deal 2d6 with a <a href="#weapons">weapon</a> that can be couched (held horizontally perpendicular to your body).</li>
 	<!-- seems so weird this is not a weapon property. could we get a bespoke list? is it a straight 2d6 roll, ignoring the usual die discards of heavy weapons? -->
+	<li><strong>Prone.</strong> Melee <a href="#combat">attacks</a> automatically hit.</li>
+	<li><strong>Unaware.</strong> Mortals are instantly slain if you can ensure a killing blow.</li>
+	<!-- alphabetize above -->
 </ul>
 <h4 id="creatures">Creatures<a class="wutc-header-anchor" href="#creatures" title="Permalink" aria-hidden="true"></a></h4>
-<p>Creatures add half their HD to their <a href="#attacking">attacks</a>.</p>
+<p>Creatures add half their HD to their <a href="#combat">attacks</a>. Creature HD also affects the number of attacks a creature makes each <a href="#timekeeping">round</a>.</p>
+<!-- add explanation of number of attacks -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Creature Attacks</caption>
 	<thead>
@@ -1238,7 +1257,7 @@
 <h2 id="advancement">Advancement<a class="wutc-header-anchor" href="#advancement" title="Permalink" aria-hidden="true"></a></h2>
 <h3 id="boasts">Boasts<a class="wutc-header-anchor" href="#boasts" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
-	<li><strong>Make a Heroic Boast.</strong> Gain 1 HD or +1 to <a href="#attacking">attacks</a>. You can only have one boast pending at a time.</li>
+	<li><strong>Make a Heroic Boast.</strong> Gain 1 HD or +1 to <a href="#combat">attacks</a>. You can only have one boast pending at a time.</li>
 	<li><strong>Failing a Boast.</strong> You lose your boast's benefits.</li>
 	<li><strong>Shirking a Boast.</strong> If anyone finds you shirked your boast, you fail it, and might not be able to boast again (until the Referee agrees).</li>
 	<li><strong>Claim Rights.</strong> If you satisfy your boast, its benefits are permanent, and you can claim any wager or reward offered by others. You can also make a new boast.</li>
@@ -1248,12 +1267,14 @@
 <h3 id="companions-and-hirelings">Companions and Hirelings<a class="wutc-header-anchor" href="#companions-and-hirelings" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Companions.</strong> For each 1000 sp of wealth you have, you might attract a companion. Adventuring companions take half the share a character takes from all loot.</li>
+	<!-- do companions run off the same generation and basic rules as characters do? -->
 	<li><strong>Hirelings.</strong> You can hire as many hirelings as you can find and pay each day.</li>
 	<!-- add "each day" -->
-	<li><strong>Hit Points.</strong> Each hireling has 1 HD. Roll it and add listed bonus HP to the result.</li>
+	<!-- do you roll for characteristics, etc. of hirelings? -->
+	<li><strong>Hit Points.</strong> Each hireling has 1 HD. Roll it and add any listed bonus HP to the result.</li>
 	<!-- add above -->
-	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a <a href="#armor">shield</a> equipped reduce their <a href="#armor">AC</a> by 1.</li>
-	<li><strong>Skirmishers (<span class="wutc-symbol">&ddagger;</span>).</strong> Must succeed a <a href="#morale">morale</a> check to enter a melee, and each round they remain.</li>
+	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a <a href="#shields">shield</a> equipped reduce their <a href="#armor">AC</a> by 1.</li>
+	<li><strong>Skirmishers (<span class="wutc-symbol">&ddagger;</span>).</strong> Must succeed a <a href="#morale">morale</a> check to enter a melee, and each <a href="#timekeeping">round</a> they remain.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Hirelings</caption>
@@ -1502,17 +1523,18 @@
 </ul>
 <h4 id="naval-combat">Naval Combat<a class="wutc-header-anchor" href="#naval-combat" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Naval Combat Turns.</strong> Naval combat turns are 1 minute in length.</li>
+	<li><strong>Naval Combat Turns.</strong> <a href="#timekeeping">Naval combat turns</a> are 1 minute in length.</li>
 	<li><strong>Attacking Vessels.</strong> Siege weapons and sea monsters can attack <a href="#vessels">vessels</a>, treating their <a href="#armor">AC</a> as 7. Melee attacks against vessels hit automatically.</li>
 	<li><strong>Boarding.</strong> You can leap from one vessel to another by succeeding an easy Agility <a href="#tests">test</a>. <a href="#companions-and-hirelings">Marines</a> automatically succeed.</li>
 	<li><strong>Ramming.</strong> Deals 1d6 damage for each remaining vessel HD, and deals 1d6 damage to your vessel.</li>
-	<li><strong>Fire.</strong> Deals 1d6 damage. On a 6, the fire increases, dealing an additional 1d6 each round. If a 1 is rolled, the fire decreases by 1d6. A fire with no damage die is extinguished.</li>
-	<li><strong>Sinking.</strong> If a vessel takes more than 5 damage from a hit, it might begin <a href="#sinking">sinking</a> (determined by the Referee).</li>
+	<li><strong>Fire.</strong> Deals 1d6 damage. On a 6, the fire increases, dealing an additional 1d6 each <a href="#timekeeping">round</a>. On a 1, the fire decreases by 1d6. A fire with no damage die is extinguished.</li>
+	<li><strong>Sinking.</strong> If a vessel takes at least 6 damage from a hit, it might begin <a href="#sinking">sinking</a> (determined by the Referee).</li>
+	<!-- at least 6-->
 </ul>
 <h4 id="sinking">Sinking<a class="wutc-header-anchor" href="#sinking" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Beginning to Sink.</strong> There is a 50% chance the vessel sinks within 3d6 <a href="#naval-combat">naval turns</a>. Any further sinking result halves the remaining time before the vessel sinks.</li>
-	<li><strong>Preventing Sinking.</strong> If half the crew works to save the vessel for 1d6 rounds, there is a 70% chance the vessel is saved. A crew under attack can't prevent sinking.</li>
+	<li><strong>Preventing Sinking.</strong> If half the crew works to save the vessel for 1d6 <a href="#timekeeping">rounds</a>, there is a 70% chance the vessel is saved. A crew under attack can't prevent sinking.</li>
 </ul>
 <h4 id="drowning">Drowning<a class="wutc-header-anchor" href="#drowning" title="Permalink" aria-hidden="true"></a></h4>
 <p>If you remain in water for 1 minute, roll 1d20. If the result is greater than your AC, you drown.</p>
@@ -1554,25 +1576,24 @@
 </ul>
 <hr>
 <h3 id="beneath-the-earth">Beneath the Earth<a class="wutc-header-anchor" href="#beneath-the-earth" title="Permalink" aria-hidden="true"></a></h3>
-<h4 id="beneath-the-earth-timekeeping">Timekeeping<a class="wutc-header-anchor" href="#beneath-the-earth-timekeeping" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Turns.</strong> Each turn represents about 10 minutes. Most activities take 1 turn, for example, searching for traps, unlocking doors, or clearing obstacles.</li>
-	<li><strong>Rest.</strong> After combat or an hour of exploration, you should take one turn to rest. If you push beyond your limits, the Referee might impose a &minus;2 penalty to d20 rolls until you rest for 2 turns.</li>
+	<li><strong>Exploration.</strong> Most activities take 1 <a href="#timekeeping">turn</a>, for example, searching for traps, unlocking doors, or clearing obstacles.</li>
+	<li><strong>Rest.</strong> After combat or an hour of exploration, you should take one <a href="#timekeeping">turn</a> to rest. If you push beyond your limits, the Referee might impose a &minus;2 penalty to d20 rolls until you rest for 2 <a href="#timekeeping">turns</a>.</li>
 </ul>
 <h4 id="light">Light<a class="wutc-header-anchor" href="#light" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Torches.</strong> Burn for one hour (6 turns).</li>
-	<li><strong>Lanterns.</strong> A <a href="#supplies">pint flask of oil</a> burning in a <a href="#supplies">lantern</a> lasts 4 hours (24 turns).</li>
+	<li><strong>Torches.</strong> Burn for one hour (6 <a href="#timekeeping">turns</a>).</li>
+	<li><strong>Lanterns.</strong> A <a href="#supplies">pint flask of oil</a> burning in a <a href="#supplies">lantern</a> lasts 4 hours (24 <a href="#timekeeping">turns</a>).</li>
 	<li><strong>Monsters.</strong> Might be able to see in darkness.</li>
 </ul>
 <h4 id="beneath-the-earth-movement">Movement<a class="wutc-header-anchor" href="#beneath-the-earth-movement" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Cautious Movement.</strong> 240 feet each turn, and you can map, check for traps, and make close observation.</li>
-	<li><strong>Hasty Movement.</strong> 960 feet each turn, but you might become lost, stumble into ambushes, or trigger traps, especially when moving through areas you haven't fully mapped yet (determined by the Referee).</li>
+	<li><strong>Cautious Movement.</strong> 240 feet each <a href="#timekeeping">turn</a>, and you can map, check for traps, and make close observation.</li>
+	<li><strong>Hasty Movement.</strong> 960 feet each <a href="#timekeeping">turn</a>, but you might become lost, stumble into ambushes, or trigger traps, especially when moving through areas you haven't fully mapped yet (determined by the Referee).</li>
 </ul>
 <h4 id="encounters">Encounters<a class="wutc-header-anchor" href="#encounters" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Encounters.</strong> Each turn, there is a 1-in-6 chance of an encounter.</li>
+	<li><strong>Encounters.</strong> Each <a href="#timekeeping">turn</a>, there is a 1-in-6 chance of an encounter.</li>
 	<li><strong>Surprise.</strong> Light and sound might determine whether you are aware of others. Unaware parties have a 2-in-6 chance of being surprised.</li>
 	<li><strong>Distance.</strong> When an encounter begins, each group begins 2d6 &times; 10 feet apart. If anyone is surprised, the distance is halved.</li>
 </ul>
@@ -1666,7 +1687,7 @@
 			<li><strong>One Use:</strong> Craft a simulacrum of the target, made from their hair and blood, and mixed with 100 chrysalises or cocoons. Consume it.</li>
 			<li><strong>1/day:</strong> Receive blasphemous induction into a doppelganger cult. Participate in unspeakable rites and child sacrifice.</li>
 			<li><strong>Effects:</strong> You reshape yourself in the image of another humanoid.</li>
-			<li><strong>Duration:</strong> 36 turns</li>
+			<li><strong>Duration:</strong> 36 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-animal-growth">
@@ -1674,7 +1695,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Mix blood of a pregnant animal with stewed lilac, and leave to brew for a year. Flick the droplets at the targets.</li>
 			<li><strong>Effects:</strong> 1d6 animals gain giant proportions.</li>
-			<li><strong>Duration:</strong> 12 turns</li>
+			<li><strong>Duration:</strong> 12 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-animate-dead">
@@ -1703,8 +1724,8 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Blast upon a horn wrenched from the skull of a satyr or narwhal.</li>
 			<li><strong>1/day:</strong> Blast upon a horn gifted by the unicorn.</li>
-			<li><strong>Effects:</strong> Your allies gain a +1 bonus to <a href="#attacking">attacks</a> and <a href="#morale">morale</a> checks.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Effects:</strong> Your allies gain a +1 bonus to <a href="#combat">attacks</a> and <a href="#morale">morale</a> checks.</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-charm-monster">
@@ -1735,8 +1756,8 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Coat your mouth with blessed oils and perform glossolalia. The origin of the blessing determines what creature the spell abjures.</li>
 			<li><strong>1/day:</strong> You must become tattooed with exhortations and banishments, using ink from a giant squid, or a gall harvested from a centuries-old tree.</li>
-			<li><strong>Effects:</strong> All creatures within the area are protected. If an abjured creature <a href="#attacking">attacks</a> a protected creature, they do so with a &minus;2 penalty.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Effects:</strong> All creatures within the area are protected. If an abjured creature <a href="#combat">attacks</a> a protected creature, they do so with a &minus;2 penalty.</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-clairvoyance">
@@ -1745,7 +1766,7 @@
 			<li><strong>One Use:</strong> Open your forehead with fragile blade of obsidian, allowing your presence to slip forth.</li>
 			<li><strong>1/day:</strong> Bore a hole into your skull with a drill of star-metal, then discard the drill in a pool unsullied by fish.</li>
 			<li><strong>Effects:</strong> Your awareness is freed from your body. You can travel up to half a mile from your body. They can't pass through lead or 20 feet of stone.</li>
-			<li><strong>Duration:</strong> 36 turns</li>
+			<li><strong>Duration:</strong> 36 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-cloudkill">
@@ -1761,7 +1782,7 @@
 			<li><strong>One Use:</strong> Behead a light-drinking cave-eel.</li>
 			<li><strong>1/day:</strong> Hold up the eye-lens of a beached whale up to a light source.</li>
 			<li><strong>Effects:</strong> A glare of alien colours errupts, stunning creatures that fail a warding <a href="#saves">save</a>. A stunned creature can't take actions.</li>
-			<li><strong>Duration:</strong> 1d6 rounds</li>
+			<li><strong>Duration:</strong> 1d6 <a href="#timekeeping">rounds</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-comprehend-languages">
@@ -1830,8 +1851,8 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Wrench a horn from the skull of demon with less than 7 HD. Release a dirge on a horn.</li>
 			<li><strong>1/day:</strong> Wrench a horn from the skull of demon with at least 7 HD. Release a dirge on a horn.</li>
-			<li><strong>Effects:</strong> Your enemies' <a href="#attacking">attacks</a> and <a href="#morale">morale</a> checks are made with a &minus;1 penalty.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Effects:</strong> Your enemies' <a href="#combat">attacks</a> and <a href="#morale">morale</a> checks are made with a &minus;1 penalty.</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-darkness">
@@ -1840,7 +1861,7 @@
 			<li><strong>One Use:</strong> Burst the eye of a mother fox or bat. Fling the pulp over the area.</li>
 			<li><strong>1/day:</strong> Make a home for darkness in your chest cavity&mdash;a glazed clay sphere, inserted surgically. Alternatively, find some talking darkness and strike a deal.</li>
 			<li><strong>Effects:</strong> Total darkness suffuses an area out to the distance a torch would illuminate. No light can pierce such magical darkness.</li>
-			<li><strong>Duration:</strong> 24 hours (144 turns)</li>
+			<li><strong>Duration:</strong> 24 hours (144 <a href="#timekeeping">turns</a>)</li>
 		</ul>
 	</li>
 	<li id="details-spell-detect-invisibility">
@@ -1857,7 +1878,7 @@
 			<li><strong>One Use:</strong> Place a drop of pure-white or pure-black dog blood into each eye.</li>
 			<li><strong>1/day:</strong> Replace one of your eyes with a lump of quartz.</li>
 			<li><strong>Effects:</strong> All magic within your sight reveals itself to you.</li>
-			<li><strong>Duration:</strong> 3 turns</li>
+			<li><strong>Duration:</strong> 3 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-dimension-door">
@@ -1887,7 +1908,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Release blessed lily-smoke is from a container, which seeks out the restless dead.</li>
 			<li><strong>Effects:</strong> 4d6 undead are frozen in place.</li>
-			<li><strong>Duration:</strong> 12 turns</li>
+			<li><strong>Duration:</strong> 12 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-fear">
@@ -1896,7 +1917,7 @@
 			<li><strong>One Use:</strong> Wear a mask-and-cape of wolf-hide.</li>
 			<li><strong>1/day:</strong> Kill a primordial wolf-mother and re-enact the Birth of the First Wolves.</li>
 			<li><strong>Effects:</strong> Your enemies must succeed a warding <a href="#saves">save</a> or flee. Characters who fail can't engage in combat with the caster.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-fireball">
@@ -1913,7 +1934,7 @@
 			<li><strong>One Use:</strong> Smear a bar of goose-fat, hemlock, and nightshade berries on your body. Crush a feather of gold.</li>
 			<li><strong>1/day:</strong> Become spouse to a griffon or similar creature.</li>
 			<li><strong>Effects:</strong> You can fly through the air at triple your normal speed.</li>
-			<li><strong>Duration:</strong> 1d6 turns</li>
+			<li><strong>Duration:</strong> 1d6 <a href="#timekeeping">turns</a></li>
 			<li><strong>Permanent:</strong> Become a sphinx or harpy.</li>
 		</ul>
 	</li>
@@ -1937,8 +1958,8 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Consume the meat of a bird or hare killed by lightning.</li>
 			<li><strong>1/day:</strong> Survive being struck with lightning.</li>
-			<li><strong>Effects:</strong> A hasted creature always goes first in initiative. Each round, they can take a second set of actions after all other actions are resolved.</li>
-			<li><strong>Duration:</strong> 3 turns</li>
+			<li><strong>Effects:</strong> A hasted creature always goes first in initiative. Each <a href="#timekeeping">round</a>, they can take a second set of actions after all other actions are resolved.</li>
+			<li><strong>Duration:</strong> 3 <a href="#timekeeping">turns</a></li>
 
 		</ul>
 	</li>
@@ -1993,7 +2014,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Smear a bar of goose-fat, hemlock, and nightshade berries on your body. Crush a feather of silver.</li>
 			<li><strong>Effects:</strong> You levitate up to 6 inches above the ground.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-light">
@@ -2002,7 +2023,7 @@
 			<li><strong>One Use:</strong> Crush charcoal from an arson and wet it into a paste, which carries the enchantment.</li>
 			<li><strong>1/day:</strong> Drill a hole into the top of your skull and let the light in&mdash;and then pour it forth from your mouth.</li>
 			<li><strong>Effects:</strong> Light&mdash;as if cast by a torch&mdash;flows from an object of your choice.</li>
-			<li><strong>Duration:</strong> 12 hours (72 turns)</li>
+			<li><strong>Duration:</strong> 12 hours (72 <a href="#timekeeping">turns</a>)</li>
 		</ul>
 	</li>
 	<li id="details-spell-lightning-bolt">
@@ -2077,15 +2098,15 @@
 		<ul class="list-unstyled">
 			<li><strong>1/day:</strong> Murders yourself in a different dimension or space, taking the ability to invoke that other-self.</li>
 			<li><strong>Effects:</strong> An illusion of you is projected forth and acts as your double&mdash;albeit one under control. Physical attacks pass through it harmlessly&mdash;magical attacks are redirected to you.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-protection">
 		<span class="wutc-detail-item">Protection</span>
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Anoint the target with blessed water. The origin of the blessing determines what creature the protection abjures.</li>
-			<li><strong>Effects:</strong> If an abjured creature <a href="#attacking">attacks</a> a protected creature, they do so with a &minus;2 penalty.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Effects:</strong> If an abjured creature <a href="#combat">attacks</a> a protected creature, they do so with a &minus;2 penalty.</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-protection-from-missiles">
@@ -2094,7 +2115,7 @@
 			<li><strong>One Use:</strong> Snap a bundle of arrows that have each been used to kill a creature.</li>
 			<li><strong>1/day:</strong> Wear a charm of golden arrowheads that have each been used to kill a human.</li>
 			<li><strong>Effects:</strong> Normal missiles glance harmlessly from the target of this blessing.</li>
-			<li><strong>Duration:</strong> 12 turns</li>
+			<li><strong>Duration:</strong> 12 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-sixth-sense">
@@ -2103,7 +2124,7 @@
 			<li><strong>One Use:</strong> Use the desiccated head of a shark pierced with two rods of silver as a dowsing rod.</li>
 			<li><strong>1/day:</strong> Insert a series of slender copper, silver and gold rods are into your vertebrae.</li>
 			<li><strong>Effects:</strong> You can hear the surface thoughts of creatures within 60 feet, and determine the distance and direction to each of them.</li>
-			<li><strong>Duration:</strong> 12 turns</li>
+			<li><strong>Duration:</strong> 12 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-slaying-spell">
@@ -2119,7 +2140,7 @@
 			<li><strong>One Use:</strong> Smoke a bear's fecal plug and exhale.</li>
 			<li><strong>1/day:</strong> Travel through Dream and back out again in a single sleep.</li>
 			<li><strong>Effects:</strong> You rob 2d6 + 2 creatures of wakefulness, causing them to sleep unless disturbed.</li>
-			<li><strong>Duration:</strong> 24 turns</li>
+			<li><strong>Duration:</strong> 24 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-slow">
@@ -2127,8 +2148,8 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Fling mud gathered from an ocean trench.</li>
 			<li><strong>1/day:</strong> You or your estate keep alive a herd of one hundred and one lamed horses.</li>
-			<li><strong>Effects:</strong> One creature you choose must succeed a warding <a href="#saves">save</a> or be slowed, acting only every other round.</li>
-			<li><strong>Duration:</strong> 3 turns</li>
+			<li><strong>Effects:</strong> One creature you choose must succeed a warding <a href="#saves">save</a> or be slowed, acting only every other <a href="#timekeeping">round</a>.</li>
+			<li><strong>Duration:</strong> 3 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-speak-with-animals">
@@ -2137,7 +2158,7 @@
 			<li><strong>One Use:</strong> Leave the tongue of a pig and the brain of an owl to fester in a buried jar for six months. Imbibe the resulting fluid.</li>
 			<li><strong>1/day:</strong> Craft a series of platinum tongue-sheaths, corresponding to different manners of beasts.</li>
 			<li><strong>Effects:</strong> You can converse with animals.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-speak-with-dead">
@@ -2152,7 +2173,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Sap flowing through your veins allows speech with plants&mdash;and is sure to cause death.</li>
 			<li><strong>Effects:</strong> You can understand and be understood by plants.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-stone-to-flesh">
@@ -2182,7 +2203,7 @@
 			<li><strong>One Use:</strong> Obtain the eyes of black cat&mdash;the runt of the litter.</li>
 			<li><strong>1/day:</strong> Carve spectacles from the skull of a hermit.</li>
 			<li><strong>Effects:</strong> All illusions and magical visual alterations do not affect you. All hidden objects reveal themselves to you. The true nature of any magically changed item or creature is obvious to you.</li>
-			<li><strong>Duration:</strong> 18 turns</li>
+			<li><strong>Duration:</strong> 18 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-turn-undead">
@@ -2195,7 +2216,7 @@
 		</div>
 		<ul class="list-unstyled">
 			<li><strong>Christian and Muslim:</strong> Christian and Muslim dead resist turning. They were raised early, their covenant broken. All they desire is revenge upon the cruel world. A holy symbol of silver can drive them back, although they make a warding <a href="#saves">save</a> to resist. Each makes their save individually, and those that succeed are immune to further attempts.</li>
-			<li><strong>Druidic:</strong> The Druidic dead are turned by the flinging of earth gathered from the roots of an oak tree. 2d6 HD of undead are driven back each round.</li>
+			<li><strong>Druidic:</strong> The Druidic dead are turned by the flinging of earth gathered from the roots of an oak tree. 2d6 HD of undead are driven back each <a href="#timekeeping">round</a>.</li>
 			<li><strong>Norse:</strong> The dead of the ancient Norse are turned through recitation of deeds&mdash;for each successful Boast recounted, 1d6 of undead are turned.</li>
 			<li><strong>Noos:</strong> The dead of Noos are turned with sea-water, becoming calm and still when doused with a cup.</li>
 			<li><strong>Marches:</strong> The dead of the marches do not attack those reciting the names and lineages of Belgic ancestors. Many have pass-phrases woven into them as part of their raising process.</li>
@@ -2213,7 +2234,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Boil down the residue left by a Wall of Fire.</li>
 			<li><strong>Effects:</strong> A wall of ice, 5 feet thick, 15 feet long and 20 feet high forms instantly. A single blow dealing over 10 damage is required to destroy it.</li>
-			<li><strong>Duration:</strong> 6 turns (slowly melting)</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a> (slowly melting)</li>
 		</ul>
 	</li>
 	<li id="details-spell-water-breathing">
@@ -2222,7 +2243,7 @@
 			<li><strong>One Use:</strong> Create a dried powder of frog-mother and buoyant seaweed, which takes weeks. Snort it.</li>
 			<li><strong>1/day:</strong> Tattoo gills using the blood of a giant moray eel upon yourself.</li>
 			<li><strong>Effects:</strong> You and ten companions can breathe underwater.</li>
-			<li><strong>Duration:</strong> 12 turns</li>
+			<li><strong>Duration:</strong> 12 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-web">
@@ -2231,7 +2252,7 @@
 			<li><strong>One Use:</strong> Fold a huge golden web of delicate threads back into a small nugget. When thrown, it boils away, revealing the web it represents.</li>
 			<li><strong>1/day:</strong> Welcome an infestation of spiders into your blood&mdash;introduced in egg-form and kept sated with sacrifice.</li>
 			<li><strong>Effects:</strong> A ball of web explodes outwards&mdash;creatures in a 30-foot area must succeed a dodging <a href="#saves">save</a> or be stuck fast in magically regenerating web, which fights to keep them immobile. The web is highly flammable. Giants are their like are strong enough to ignore the web.</li>
-			<li><strong>Duration:</strong> 3 turns</li>
+			<li><strong>Duration:</strong> 3 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 	<li id="details-spell-witch-eye">
@@ -2239,7 +2260,7 @@
 		<ul class="list-unstyled">
 			<li><strong>One Use:</strong> Inflate the eye of a witch as a balloon.</li>
 			<li><strong>Effects:</strong> A floating eye acts a detached third eye you can see through at any distance. It is invisible, and moves through the air at the pace of walking person.</li>
-			<li><strong>Duration:</strong> 6 turns</li>
+			<li><strong>Duration:</strong> 6 <a href="#timekeeping">turns</a></li>
 		</ul>
 	</li>
 </ul>
@@ -2324,9 +2345,9 @@
 		<span class="wutc-detail-item">Chanting</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Chanting the names of saints, the titles of a singular god or the names of a pantheon grant a modicum of protection.</li>
-			<li><strong>Beginning a Chant:</strong> You must chant for 3 consecutive rounds for the chant to take effect.</li>
+			<li><strong>Beginning a Chant:</strong> You must chant for 3 consecutive <a href="#timekeeping">rounds</a> for the chant to take effect.</li>
 			<li><strong>Effects:</strong> +1 to warding <a href="#saves">saves</a>.</li>
-			<li><strong>Duration:</strong> You can chant for 1d6 1 rounds plus 1 additional round for each point of <a href="#characters">Constitution</a> above 10.</li>
+			<li><strong>Duration:</strong> You can chant for 1d6 1 rounds plus 1 additional <a href="#timekeeping">round</a> for each point of <a href="#characters">Constitution</a> above 10.</li>
 		</ul>
 	</li>
 	<li id="details-ward-cold-stones">
@@ -2472,7 +2493,7 @@
 		<span class="wutc-detail-item">Oak</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> A wood of stout reputation and deep strength. A shield of oak stops magics as well as blades. A pocket of acorns protects against all comers, and a leaf around the neck cuts through illusions.</li>
-			<li><strong>Shield:</strong> A <a href="#armor">shield</a> of oak can be sundered to add +6 to a failed warding <a href="#saves">save</a>.</li>
+			<li><strong>Shield:</strong> A <a href="#shields">shield</a> of oak can be sundered to add +6 to a failed warding <a href="#saves">save</a>.</li>
 			<li><strong>Pocket of Acorns:</strong> +1 to warding <a href="#saves">saves</a>.</li>
 			<li><strong>Oak Leaf Necklace:</strong> +4 to warding <a href="#saves">saves</a> against illusions.</li>
 		</ul>
@@ -2504,7 +2525,7 @@
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> The orange-red berries of the rowan are each marked with a five-pointed star&mdash;an indicator of their potency. Ground to a paste and smeared on a shield, they protect the wielder.</li>
 			<li><strong>Effects:</strong> +4 to warding <a href="#saves">saves</a> until the paste dries.</li>
-			<li><strong>Duration:</strong> About 2 hours (12 turns).</li>
+			<li><strong>Duration:</strong> About 2 hours (12 <a href="#timekeeping">turns</a>)</li>
 		</ul>
 	</li>
 	<li id="details-ward-rue">
@@ -2512,20 +2533,20 @@
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> Blue-green leaves also known as witchbane, and for good reason. A bundle of leaves can be burnt, those inhaling the smoke protected against magic.</li>
 			<li><strong>Effects:</strong> +3 to warding <a href="#saves">saves</a> against mortal magic users. Those breathing this smoke are unable to cast spells.</li>
-			<li><strong>Duration:</strong> 4 hours (24 turns)</li>
+			<li><strong>Duration:</strong> 4 hours (24 <a href="#timekeeping">turns</a>)</li>
 		</ul>
 	</li>
 	<li id="details-ward-sulphur">
 		<span class="wutc-detail-item">Sulphur</span>
 		<ul class="list-unstyled">
 			<li><strong>Description:</strong> A mineral eager to burn and release its terrible stink, all those breathing in the pungent smoke fall to retching but are purified of foul enchantment.</li>
-			<li><strong>Effects:</strong> Reroll warding <a href="#saves">saves</a> with a +6 bonus. Succeed a physique <a href="#saves">save</a> or lose 1d6 rounds to vomiting.</li>
+			<li><strong>Effects:</strong> Reroll warding <a href="#saves">saves</a> with a +6 bonus. Succeed a physique <a href="#saves">save</a> or lose 1d6 <a href="#timekeeping">rounds</a> to vomiting.</li>
 		</ul>
 	</li>
 	<li id="details-ward-verbena">
 		<span class="wutc-detail-item">Verbena</span>
 		<ul class="list-unstyled">
-			<li><strong>Description:</strong> The purple flowers of the Verbena, worn in a pocket, distract malign forces.</li>
+			<li><strong>Description:</strong> Carrying the purple flowers of the verbena in your pocket distracts malign forces.</li>
 			<li><strong>Effects:</strong> +3 to warding <a href="#saves">saves</a>. After a successful <a href="#saves">save</a>, the flower withers and becomes useless.</li>
 		</ul>
 	</li>
