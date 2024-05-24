@@ -87,7 +87,7 @@
 	Wolves Upon the Coast
 	<span class="wutc-subtitle">The Unofficial Player's Guide</span>
 </h1>
-<p class="small text-center">version 0.1r (2024-05-23)</p>
+<p class="small text-center">version 0.1s (2024-05-23)</p>
 <ul class="list-inline text-center">
 	<!--
 	<li class="list-inline-item"><a class="btn btn-light mt-1 mb-1 theme-light border text-white" href="/pdfs/">Download PDF</a></li>
@@ -115,6 +115,7 @@
 <p>This unofficial player's guide to <a href="https://lukegearing.blot.im/wolves-upon-the-coast">Wolves Upon the Coast</a> is an independent production and is not affiliated with Luke Gearing. This material reprinted with permission, and has been edited for clarity, consistency, or concision. Game rules relevant only to the Referee are omitted entirely. Special thanks to Luke Gearing for providing insights to authorial intent.</p>
 <h3 id="key-concepts">Key Concepts<a class="wutc-header-anchor" href="#key-concepts" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
+	<li><strong>Armor Class (AC).</strong> Your AC determines how difficult you are to hit with an <a href="#attacking">attack</a>. It affects other thing as well, including your <a href="supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
 	<li><strong>Characters.</strong> "Characters" means the player characters.</li>
 	<li><strong>Creatures.</strong> "Creatures" includes non-player characters (NPCs), including humans, monsters, or any other being with a spark of life (or undeath).</li>
 	<li><strong>Costs and Coin.</strong> All costs are listed in hacksilver (sp). Any other currency or wealth you encounter will require an exchange rate determined by the GM. Coins are all the same when it comes to <a href="#supplies-and-encumbrance">encumbrance</a>.</li>
@@ -156,28 +157,19 @@
 		</tr>
 	</tbody>
 </table></div>
-<div class="row">
-	<div class="col-md-6">
-		<p>You begin with:</p>
-		<ul>
-			<li>1d6 hit dice (HD). Roll your HD to determine your starting hit points (HP).</li>
-			<li>+2 to <a href="#attacking">attacks</a>.</li>
-			<li>Knowledge of half of 1d6 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare you know a language until you encounter it.</li>
-			<li>3d6 &times; 10 hacksilver (sp) worth of <a href="#weapons">weapons</a>, <a href="#armor">armor</a>, and <a href="#supplies">supplies</a>. Anything not spent is lost.</li>
-		</ul>
-		<p>The party begins with:</p>
-		<ul>
-			<li>1 karvi, a small raiding <a href="#vessels">vessel</a>.</li>
-			<li>A crew of 12 fellow ex-thralls who look to you for leadership.</li>
-			<li>Food and water for four days (including the crew).</li>
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<div class="text-center">
-			<img class="img-fluid wutc-image" src="images/axe-wielder.webp" alt="Illustration: an axe-wielder">	
-		</div>		
-	</div>
-</div>
+<p>You begin with:</p>
+<ul>
+	<li>1d6 hit dice (HD). Roll your HD to determine your starting hit points (HP).</li>
+	<li>+2 to <a href="#attacking">attacks</a>.</li>
+	<li>Knowledge of half of 1d6 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare you know a language until you encounter it.</li>
+	<li>3d6 &times; 10 hacksilver (sp) worth of <a href="#weapons">weapons</a>, <a href="#armor">armor</a>, and <a href="#supplies">supplies</a>. Anything not spent is lost.</li>
+</ul>
+<p>The party begins with:</p>
+<ul>
+	<li>1 karvi, a small raiding <a href="#vessels">vessel</a>.</li>
+	<li>A crew of 12 fellow ex-thralls who look to you for leadership.</li>
+	<li>Food and water for four days (including the crew).</li>
+</ul>
 <hr>
 <p class="wutc-quote">
 	<span class="d-block">A sword age, a wind age, a wolf age. </span>
@@ -421,7 +413,6 @@
 	<li><strong>Encumbrance.</strong> If you exceed your limit, you are encumbered. You move at half-speed, and are prone to accidents. Carrying more than twice your limit can result in exhaustion.</li>
 	<li><strong>Coin.</strong> 250 coins count as one item.</li>
 </ul>
-<!-- desktop viewports -->
 <div class="d-none d-md-block d-sm-none">
 	<div class="row">
 		<div class="col-sm-6">
@@ -540,16 +531,16 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Mirror, large metal</td>
+						<td>Mirror, metal, large</td>
 						<td class="text-end">10</td>
 					</tr>
 					<tr>
-						<td>Mirror, small silver</td>
-						<td class="text-end">20</td>
+						<td>Mirror, metal, small</td>
+						<td class="text-end">5</td>
 					</tr>
 					<tr>
-						<td>Mirror, small metal</td>
-						<td class="text-end">5</td>
+						<td>Mirror, silver, small</td>
+						<td class="text-end">20</td>
 					</tr>
 					<tr>
 						<td>Net</td>
@@ -636,314 +627,311 @@
 		</div>
 	</div>
 </div>
-<!-- mobile viewports -->
-<div class="d-none d-sm-block d-md-none">
-<div class="row">
-	<div class="col">
-		<div class="table-responsive"><table class="table table-light table-striped table-sm">
-			<caption>Supplies</caption>
-			<thead>
-				<tr>
-					<th class="vertical-align-bottom" scope="col">Supplies</th>
-					<th class="vertical-align-bottom text-end" scope="col">Cost</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Backpack</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Bandages (5)</td>
-					<td class="text-end">10</td>
-				</tr>
-				<tr>
-					<td>Bottle</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Box, iron, large</td>
-					<td class="text-end">30</td>
-				</tr>
-				<tr>
-					<td>Box, iron, small</td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Candle, tallow</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Candle, wax</td>
-					<td class="text-end">2</td>
-				</tr>
-				<tr>
-					<td>Cart</td>
-					<td class="text-end">50</td>
-				</tr>
-				<tr>
-					<td>Case, map</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Checkers</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Chest, wood, large</td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Chest, wood, small</td>
-					<td class="text-end">8</td>
-				</tr>
-				<tr>
-					<td>Compass</td>
-					<td class="text-end">100</td>
-				</tr>
-				<tr>
-					<td>Crowbar</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Dice</td>
-					<td class="text-end">2</td>
-				</tr>
-				<tr>
-					<td>Flint and steel</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Grappling Hook</td>
-					<td class="text-end">10</td>
-				</tr>
-				<tr>
-					<td>Hammer and wood stakes</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Laboratory (portable)</td>
-					<td class="text-end">150</td>
-				</tr>
-				<tr>
-					<td>Lantern, bullseye</td>
-					<td class="text-end">12</td>
-				</tr>
-				<tr>
-					<td>Lantern, hooded</td>
-					<td class="text-end">7</td>
-				</tr>
-				<tr>
-					<td>Lock picks</td>
-					<td class="text-end">25</td>
-				</tr>
-				<tr>
-					<td>Map, local</td>
-					<td class="text-end">20</td>
-				</tr>
-				<tr>
-					<td>Mirror, large, metal</td>
-					<td class="text-end">10</td>
-				</tr>
-				<tr>
-					<td>Mirror, small, metal</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Mirror, small, silver </td>
-					<td class="text-end">20</td>
-				</tr>
-				<tr>
-					<td>Net</td>
-					<td class="text-end">10 </td>
-				</tr>
-				<tr>
-					<td>Oil, pint flask</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Pole, 10-foot</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Ration, dry day</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Ration, trail day</td>
-					<td class="text-end">2</td>
-				</tr>
-				<tr>
-					<td>Rope, silk, 50-foot</td>
-					<td class="text-end">70</td>
-				</tr>
-				<tr>
-					<td>Rope, hemp, 50-foot</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Sack</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Shovel</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Shovel, wood</td>
-					<td class="text-end">5</td>
-				</tr>
-				<tr>
-					<td>Water or wineskin</td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Skiing equipment</td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Sled</td>
-					<td class="text-end">20</td>
-				</tr>
-				<tr>
-					<td>Sleeping bag</td>
-					<td class="text-end">2</td>
-				</tr>
-				<tr>
-					<td>Snare</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Spike, iron</td>
-					<td class="text-end">3</td>
-				</tr>
-				<tr>
-					<td>Tent</td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Tinderbox</td>
-					<td class="text-end">10</td>
-				</tr>
-				<tr>
-					<td>Torches (6)</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Wagon</td>
-					<td class="text-end">150</td>
-				</tr>
-			</tbody>
-		</table></div>
+<div class="d-block d-md-none">
+	<div class="row">
+		<div class="col">
+			<div class="table-responsive"><table class="table table-light table-striped table-sm">
+				<caption>Supplies</caption>
+				<thead>
+					<tr>
+						<th class="vertical-align-bottom" scope="col">Supplies</th>
+						<th class="vertical-align-bottom text-end" scope="col">Cost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Backpack</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Bandages (5)</td>
+						<td class="text-end">10</td>
+					</tr>
+					<tr>
+						<td>Bottle</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Box, iron, large</td>
+						<td class="text-end">30</td>
+					</tr>
+					<tr>
+						<td>Box, iron, small</td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Candle, tallow</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Candle, wax</td>
+						<td class="text-end">2</td>
+					</tr>
+					<tr>
+						<td>Cart</td>
+						<td class="text-end">50</td>
+					</tr>
+					<tr>
+						<td>Case, map</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Checkers</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Chest, wood, large</td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Chest, wood, small</td>
+						<td class="text-end">8</td>
+					</tr>
+					<tr>
+						<td>Compass</td>
+						<td class="text-end">100</td>
+					</tr>
+					<tr>
+						<td>Crowbar</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Dice</td>
+						<td class="text-end">2</td>
+					</tr>
+					<tr>
+						<td>Flint and steel</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Grappling Hook</td>
+						<td class="text-end">10</td>
+					</tr>
+					<tr>
+						<td>Hammer and wood stakes</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Laboratory (portable)</td>
+						<td class="text-end">150</td>
+					</tr>
+					<tr>
+						<td>Lantern, bullseye</td>
+						<td class="text-end">12</td>
+					</tr>
+					<tr>
+						<td>Lantern, hooded</td>
+						<td class="text-end">7</td>
+					</tr>
+					<tr>
+						<td>Lock picks</td>
+						<td class="text-end">25</td>
+					</tr>
+					<tr>
+						<td>Map, local</td>
+						<td class="text-end">20</td>
+					</tr>
+					<tr>
+						<td>Mirror, large, metal</td>
+						<td class="text-end">10</td>
+					</tr>
+					<tr>
+						<td>Mirror, small, metal</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Mirror, small, silver </td>
+						<td class="text-end">20</td>
+					</tr>
+					<tr>
+						<td>Net</td>
+						<td class="text-end">10 </td>
+					</tr>
+					<tr>
+						<td>Oil, pint flask</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Pole, 10-foot</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Ration, dry day</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Ration, trail day</td>
+						<td class="text-end">2</td>
+					</tr>
+					<tr>
+						<td>Rope, silk, 50-foot</td>
+						<td class="text-end">70</td>
+					</tr>
+					<tr>
+						<td>Rope, hemp, 50-foot</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Sack</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Shovel</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Shovel, wood</td>
+						<td class="text-end">5</td>
+					</tr>
+					<tr>
+						<td>Water or wineskin</td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Skiing equipment</td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Sled</td>
+						<td class="text-end">20</td>
+					</tr>
+					<tr>
+						<td>Sleeping bag</td>
+						<td class="text-end">2</td>
+					</tr>
+					<tr>
+						<td>Snare</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Spike, iron</td>
+						<td class="text-end">3</td>
+					</tr>
+					<tr>
+						<td>Tent</td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Tinderbox</td>
+						<td class="text-end">10</td>
+					</tr>
+					<tr>
+						<td>Torches (6)</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Wagon</td>
+						<td class="text-end">150</td>
+					</tr>
+				</tbody>
+			</table></div>
+		</div>
 	</div>
-</div>
 </div>
 <hr>
 <h3 id="livestock">Livestock<a class="wutc-header-anchor" href="#livestock" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Beast of Burden (<span class="wutc-symbol">&dagger;</span>).</strong> Can carry 24 items.</li>
 </ul>
-<!-- desktop viewports -->
 <div class="d-none d-md-block d-sm-none">
-<div class="row">
-	<div class="col-sm-6">
-		<div class="table-responsive"><table class="table table-light table-striped table-sm">
-			<caption>Livestock</caption>
-			<thead>
-				<tr>
-					<th class="vertical-align-bottom" scope="col">Livestock</th>
-					<th class="vertical-align-bottom text-end" scope="col">Cost</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Chicken</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Cow</td>
-					<td class="text-end">10</td>
-				</tr>
-				<tr>
-					<td>Dog</td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Donkey <span class="wutc-symbol">&dagger;</span></td>
-					<td class="text-end">8</td>
-				</tr>
-				<tr>
-					<td>Goat</td>
-					<td class="text-end">3</td>
-				</tr>
-				<tr>
-					<td>Hawk</td>
-					<td class="text-end">20</td>
-				</tr>
-				<tr>
-					<td>Horse, Draft <span class="wutc-symbol">&dagger;</span></td>
-					<td class="text-end">30</td>
-				</tr>
-				<tr>
-					<td>Horse, war</td>
-					<td class="text-end">200</td>
-				</tr>
-				<tr>
-					<td>Horse, riding</td>
-					<td class="text-end">25</td>
-				</tr>
-			</tbody>
-		</table></div>
-	</div>
-	<div class="col-sm-6">
-		<div class="table-responsive"><table class="table table-light table-striped table-sm">
-			<caption>Livestock (Continued)</caption>
-			<thead>
-				<tr>
-					<th class="vertical-align-bottom" scope="col">Livestock (Continued)</th>
-					<th class="vertical-align-bottom text-end" scope="col">Cost</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Mule <span class="wutc-symbol">&dagger;</span></td>
-					<td class="text-end">20</td>
-				</tr>
-				<tr>
-					<td>Ox <span class="wutc-symbol">&dagger;</span></td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Pigeon</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Piglet</td>
-					<td class="text-end">1</td>
-				</tr>
-				<tr>
-					<td>Pig</td>
-					<td class="text-end">3</td>
-				</tr>
-				<tr>
-					<td>Pony <span class="wutc-symbol">&dagger;</span></td>
-					<td class="text-end">15</td>
-				</tr>
-				<tr>
-					<td>Sheep</td>
-					<td class="text-end">2</td>
-				</tr>
-				<tr>
-					<td>Songbird</td>
-					<td class="text-end">25</td>
-				</tr>
-			</tbody>
-		</table></div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="table-responsive"><table class="table table-light table-striped table-sm">
+				<caption>Livestock</caption>
+				<thead>
+					<tr>
+						<th class="vertical-align-bottom" scope="col">Livestock</th>
+						<th class="vertical-align-bottom text-end" scope="col">Cost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Chicken</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Cow</td>
+						<td class="text-end">10</td>
+					</tr>
+					<tr>
+						<td>Dog</td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Donkey <span class="wutc-symbol">&dagger;</span></td>
+						<td class="text-end">8</td>
+					</tr>
+					<tr>
+						<td>Goat</td>
+						<td class="text-end">3</td>
+					</tr>
+					<tr>
+						<td>Hawk</td>
+						<td class="text-end">20</td>
+					</tr>
+					<tr>
+						<td>Horse, Draft <span class="wutc-symbol">&dagger;</span></td>
+						<td class="text-end">30</td>
+					</tr>
+					<tr>
+						<td>Horse, war</td>
+						<td class="text-end">200</td>
+					</tr>
+					<tr>
+						<td>Horse, riding</td>
+						<td class="text-end">25</td>
+					</tr>
+				</tbody>
+			</table></div>
+		</div>
+		<div class="col-sm-6">
+			<div class="table-responsive"><table class="table table-light table-striped table-sm">
+				<caption>Livestock (Continued)</caption>
+				<thead>
+					<tr>
+						<th class="vertical-align-bottom" scope="col">Livestock (Continued)</th>
+						<th class="vertical-align-bottom text-end" scope="col">Cost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mule <span class="wutc-symbol">&dagger;</span></td>
+						<td class="text-end">20</td>
+					</tr>
+					<tr>
+						<td>Ox <span class="wutc-symbol">&dagger;</span></td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Pigeon</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Piglet</td>
+						<td class="text-end">1</td>
+					</tr>
+					<tr>
+						<td>Pig</td>
+						<td class="text-end">3</td>
+					</tr>
+					<tr>
+						<td>Pony <span class="wutc-symbol">&dagger;</span></td>
+						<td class="text-end">15</td>
+					</tr>
+					<tr>
+						<td>Sheep</td>
+						<td class="text-end">2</td>
+					</tr>
+					<tr>
+						<td>Songbird</td>
+						<td class="text-end">25</td>
+					</tr>
+				</tbody>
+			</table></div>
+		</div>
 	</div>
 </div>
-</div>
-<!-- mobile viewports -->
-<div class="row d-none d-sm-block d-md-none">
+<div class="row d-block d-md-none">
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="table-responsive"><table class="table table-light table-striped table-sm">
@@ -1258,7 +1246,10 @@
 <h3 id="companions-and-hirelings">Companions and Hirelings<a class="wutc-header-anchor" href="#companions-and-hirelings" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Companions.</strong> For each 1000 sp of wealth you have, you might attract a companion. Adventuring companions take half the share a character takes from all loot.</li>
-	<li><strong>Hirelings.</strong> You can hire as many hirelings as you can find and pay.</li>
+	<li><strong>Hirelings.</strong> You can hire as many hirelings as you can find and pay each day.</li>
+	<!-- add each day -->
+	<li><strong>Hit Points.</strong> Each hireling has 1 HD. Roll it and add listed bonus HP to the result.</li>
+	<!-- add above -->
 	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a shield equipped reduce their AC by 1.</li>
 	<li><strong>Skirmishers (<span class="wutc-symbol">&ddagger;</span>).</strong> Must succeed a <a href="#morale">morale</a> check to enter a melee, and each round they remain.</li>
 </ul>
@@ -1277,40 +1268,43 @@
 			<th class="fw-normal" scope="row">Non-combat</th>
 			<td class="text-end">2</td>
 			<td class="text-center">&mdash;</td>
-			<td class="text-center">1 + 0</td>
+			<td class="text-center">1d6</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Skirmisher <span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">5</td>
 			<td class="text-center">9</td>
-			<td class="text-center">1 + 1</td>
+			<td class="text-center">1d6 + 1</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Footman <span class="wutc-symbol">&dagger;</span></th>
 			<td class="text-end">10</td>
 			<td class="text-center">7</td>
-			<td class="text-center">1 + 1</td>
+			<td class="text-center">1d6 + 1</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Marine</th>
 			<td class="text-end">12</td>
 			<td class="text-center">7</td>
-			<td class="text-center">1 + 1</td>
+			<td class="text-center">1d6 + 1</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Armored Footman <span class="wutc-symbol">&dagger;</span></th>
 			<td class="text-end">20</td>
 			<td class="text-center">5</td>
-			<td class="text-center">1 + 2</td>
+			<td class="text-center">1d6 + 2</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Horseman <span class="wutc-symbol">&dagger;</span></th>
 			<td class="text-end">40</td>
 			<td class="text-center">5</td>
-			<td class="text-center">1 + 1</td>
+			<td class="text-center">1d6 + 1</td>
 		</tr>
 	</tbody>
 </table></div>
+<div class="text-center">
+	<img class="img-fluid wutc-image" src="images/goblin.webp" alt="Illustration: goblin">	
+</div>
 <hr>
 
 <h2 id="travel">Travel<a class="wutc-header-anchor" href="#travel" title="Permalink" aria-hidden="true"></a></h2>
