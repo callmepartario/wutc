@@ -97,7 +97,7 @@
 </ul>
 <hr>
 
-<div class="text-center">
+<div class="text-center mb-3">
 	<img class="img-fluid wutc-image" src="images/vessel.webp" alt="Illustration: a viking vessel">	
 </div>
 <p class="wutc-quote">
@@ -284,7 +284,7 @@
 			<th class="fw-normal" scope="row">Poleaxe <span class="wutc-symbol">&ddagger;</span></th>
 			<td class="text-end">20</td>
 			<td>Heavy</td>
-			<td>Treat target AC as 7.</td>
+			<td>Treat target <a href="#armor">AC</a> as 7.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Quarterstaff <span class="wutc-symbol">&ddagger;</span></th>
@@ -367,7 +367,7 @@
 
 <h2 id="armor">Armor<a class="wutc-header-anchor" href="#armor" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
-	<li><strong>Armor Class (AC).</strong> Your AC determines how difficult you are to hit with an <a href="#attacking">attack</a>. It affects other thing as well, including your <a href="supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
+	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#attacking">attack</a>. It affects other thing as well, including your <a href="supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
 	<li><strong>Dodging Modifier.</strong> Your dodging <a href="#saves">saves</a> are modified depending on the armor you wear (or eschew).</li>
 	<!-- add above -->
 	<li><strong>Shields.</strong> A shield costs 15 sp. Equipping a shield reduces your AC by 1. When you are hit by a conventional attack but before damage is rolled, you can sunder your shield to negate the damage, destroying the shield.</li>
@@ -409,12 +409,15 @@
 		</tr>
 	</tbody>
 </table></div>
+<div class="text-center">
+	<img class="img-fluid wutc-image" src="images/shield.webp" alt="Illustration: a viking shield">	
+</div>
 <hr>
 
 <h2 id="supplies-and-encumbrance">Supplies and Encumbrance<a class="wutc-header-anchor" href="#supplies-and-encumbrance" title="Permalink" aria-hidden="true"></a></h2>
 <h3 id="supplies">Supplies<a class="wutc-header-anchor" href="#supplies" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
-	<li><strong>Capacity.</strong> You can carry a number of items equal to your AC plus 5. Equipped items don't count towards this limit.</li>
+	<li><strong>Capacity.</strong> You can carry a number of items equal to your <a href="#armor">AC</a> plus 5. Equipped items don't count towards this limit.</li>
 	<li><strong>Encumbrance.</strong> If you exceed your limit, you are encumbered. You move at half-speed, and are prone to accidents. Carrying more than twice your limit can result in exhaustion.</li>
 	<li><strong>Coin.</strong> 250 coins count as one item.</li>
 </ul>
@@ -1091,11 +1094,11 @@
 <ul>
 	<li><strong>Rounds.</strong> Each round represents about 6 seconds.</li>
 	<li><strong>Initiative.</strong> Roll a d10. If the result is equal to or less than your AC, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to reroll initiative each round.</li>
-	<!-- d10 vs. % chance -->
 </ul>
 <h4 id="attacking">Attacking<a class="wutc-header-anchor" href="#attacking" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
-	<li><strong>Attacks.</strong> Roll 1d20 plus attack bonus, any modifiers, and the target's AC. If the result is 20+, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>).</li>
+	<li><strong>Attacks.</strong> Roll 1d20 plus attack bonus, any modifiers, and the target's <a href="#armor">AC</a>. If the result is at least 20, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>). Damage is subtracted from the target's HP.</li>
+	<!-- replace -->
 	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 rounds, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies">bandages</a>). A creature reduced to 0 HP dies.</li>
 </ul>
 <h4 id="combat-complications">Combat Complications<a class="wutc-header-anchor" href="#combat-complications" title="Permalink" aria-hidden="true"></a></h4>
@@ -1249,7 +1252,7 @@
 	<!-- add "each day" -->
 	<li><strong>Hit Points.</strong> Each hireling has 1 HD. Roll it and add listed bonus HP to the result.</li>
 	<!-- add above -->
-	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a shield equipped reduce their AC by 1.</li>
+	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a <a href="#armor">shield</a> equipped reduce their <a href="#armor">AC</a> by 1.</li>
 	<li><strong>Skirmishers (<span class="wutc-symbol">&ddagger;</span>).</strong> Must succeed a <a href="#morale">morale</a> check to enter a melee, and each round they remain.</li>
 </ul>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
@@ -1500,7 +1503,7 @@
 <h4 id="naval-combat">Naval Combat<a class="wutc-header-anchor" href="#naval-combat" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Naval Combat Turns.</strong> Naval combat turns are 1 minute in length.</li>
-	<li><strong>Attacking Vessels.</strong> Siege weapons and sea monsters can attack <a href="#vessels">vessels</a>, treating their AC as 7. Melee attacks against vessels hit automatically.</li>
+	<li><strong>Attacking Vessels.</strong> Siege weapons and sea monsters can attack <a href="#vessels">vessels</a>, treating their <a href="#armor">AC</a> as 7. Melee attacks against vessels hit automatically.</li>
 	<li><strong>Boarding.</strong> You can leap from one vessel to another by succeeding an easy Agility <a href="#tests">test</a>. <a href="#companions-and-hirelings">Marines</a> automatically succeed.</li>
 	<li><strong>Ramming.</strong> Deals 1d6 damage for each remaining vessel HD, and deals 1d6 damage to your vessel.</li>
 	<li><strong>Fire.</strong> Deals 1d6 damage. On a 6, the fire increases, dealing an additional 1d6 each round. If a 1 is rolled, the fire decreases by 1d6. A fire with no damage die is extinguished.</li>
@@ -1512,7 +1515,8 @@
 	<li><strong>Preventing Sinking.</strong> If half the crew works to save the vessel for 1d6 rounds, there is a 70% chance the vessel is saved. A crew under attack can't prevent sinking.</li>
 </ul>
 <h4 id="drowning">Drowning<a class="wutc-header-anchor" href="#drowning" title="Permalink" aria-hidden="true"></a></h4>
-<p>If you remain in water for 1 minute, roll a d20. If the result is greater than your AC, you drown.</p>
+<p>If you remain in water for 1 minute, roll 1d20. If the result is greater than your AC, you drown.</p>
+<!-- 1d20 -->
 <hr>
 <h3 id="upon-the-land">Upon the Land<a class="wutc-header-anchor" href="#upon-the-land" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
