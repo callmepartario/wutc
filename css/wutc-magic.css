@@ -11,11 +11,11 @@
 
 body.theme-light { 
 	color: #000;
-	background-color: #064 !important;
+	background-color: #604 !important;
 }
 body.theme-dark { 
 	color: #fff;
-	background-color: #032 !important;
+	background-color: #302 !important;
 }
 button.theme-light, a.btn.theme-light { 
 	background-color: #fff7fb; 
