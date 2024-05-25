@@ -46,6 +46,7 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="wutc-navbar-resolution-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resolution</a>
 					<ul class="dropdown-menu dropdown-menu-light theme-light" aria-labelledby="wutc-navbar-resolution-tools">
+						<li><a class="dropdown-item wutc-nav" href="#timekeeping">Timekeeping</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#tests">Tests</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#saves">Saves</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#combat">Combat</a></li>
@@ -116,15 +117,7 @@
 <ul>
 	<li><strong>Characters.</strong> "Characters" means the player characters.</li>
 	<li><strong>Creatures.</strong> "Creatures" includes non-player characters (NPCs), including humans, monsters, or any other being with a spark of life (or undeath).</li>
-	<li><strong>Costs and Coin.</strong> All costs are listed in hacksilver (sp). Any other currency or wealth you encounter will require an exchange rate determined by the Referee. Coins are all the same when it comes to <a href="#supplies-and-encumbrance">encumbrance</a>.</li>
-	<li><strong>Hit Dice (HD).</strong> All hit dice are d6s.</li>
 	<li><strong>Rounding.</strong> Unless otherwise specified, round numbers up.</li>
-</ul>
-<h3 id="combat-timekeeping">Timekeeping<a class="wutc-header-anchor" href="#combat-timekeeping" title="Permalink" aria-hidden="true"></a></h3>
-<ul>
-	<li><strong>Rounds.</strong> Each round represents about 6 seconds.</li>
-	<li><strong>Turns.</strong> Each turn represents about 10 minutes.</li>
-	<li><strong>Naval Combat Turn.</strong> Each naval combat turn represents about 1 minute.</li>
 </ul>
 <hr>
 
@@ -162,7 +155,7 @@
 </table></div>
 <p>You begin with:</p>
 <ul>
-	<li>1d6 hit dice (HD). Roll your HD to determine your starting hit points (HP).</li>
+	<li>1 hit die (HD). All HD are d6s. Roll your HD to determine your starting hit points (HP).</li>
 	<li>+2 to <a href="#combat">attacks</a>.</li>
 	<li>Knowledge of half of 1d6 languages (not rounded). You can use a half-known language to conduct trade, but you can't understand nuance, read, or write. All characters should share at least one half-known language&mdash;the speech of your erstwhile captors. Usually, you can wait to declare you know a language until you encounter it.</li>
 	<li>3d6 &times; 10 hacksilver (sp) worth of <a href="#weapons">weapons</a>, <a href="#armor">armor</a>, and <a href="#supplies">supplies</a>. Anything not spent is lost.</li>
@@ -207,7 +200,7 @@
 	</tbody>
 </table></div>
 <ul>
-	<li><strong>Exploding (<span class="wutc-symbol">*</span>).</strong> If you roll a 6 on a damage die, roll another d6 and add it to the total damage.</li>
+	<li><strong>Exploding (<span class="wutc-symbol">*</span>).</strong> If you roll d6 on a damage die, roll another d6 and add it to the total damage.</li>
 	<li><strong>Reach (<span class="wutc-symbol">&dagger;</span>).</strong> You can <a href="#combat">attack</a> from behind another creature.</li>
 	<li><strong>Riposte.</strong> If an <a href="#combat">attack</a> roll against you is less than 8 (not counting your AC), you can immediately counter-attack. The number in parentheses indicates how many times you can do this each <a href="#timekeeping">round</a>.</li>
 	<li><strong>Two-Handed (<span class="wutc-symbol">&ddagger;</span>).</strong> <a href="#combat">Attacking</a> requires two hands.</li>
@@ -228,21 +221,18 @@
 			<td class="text-end">10</td>
 			<td>Medium</td>
 			<td>&minus;3 damage and <a href="#combat">attack</a> again. If you hit, you can disarm the target of a <a href="#weapons">weapon</a>, <a href="#shield">shield</a>, or other held item.</td>
-			<!-- update for clarity -->
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Club</th>
 			<td class="text-end">5</td>
 			<td>Light</td>
-			<td>Forgo damage and force a physique <a href="#saves">save</a> to stun (can take no action for 1 <a href="#timekeeping">round</a>, +3 to <a href="#combat">attacks</a> against).</td>
-			<!-- technically you can't act for one round, right? -->
+			<td>Forgo damage and the target must succeed a physique <a href="#saves">save</a> or lose a round; +3 to <a href="#combat">attacks</a> against  the target.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Dagger</th>
 			<td class="text-end">5</td>
 			<td>Light</td>
-			<td>Throwable. Heavy damage against <a href="#combat-complications">prone</a> targets.</td>
-			<!-- add targets -->
+			<td>Throwable. Heavy damage against a <a href="#combat-complications">prone</a> target.</td>
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Flail</th>
@@ -261,7 +251,6 @@
 			<td class="text-end">6</td>
 			<td>Light</td>
 			<td>Throwable. If you deal at least 4 damage with your throw, it bounces. <a href="#combat">Attack</a> again.</td>
-			<!-- fix -->
 		</tr>
 		<tr>
 			<th class="fw-normal" scope="row">Javelin</th>
@@ -376,7 +365,6 @@
 <ul>
 	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#combat">attack</a>. AC affects other thing as well, including your <a href="#supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
 	<li><strong>Dodging Modifier.</strong> Your dodging <a href="#saves">saves</a> are modified depending on the armor you wear (or eschew).</li>
-	<!-- add above -->
 </ul>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Armor</caption>
@@ -440,6 +428,9 @@
 			<li><strong>Encumbrance.</strong> If you exceed your limit, you are encumbered. You move at half-speed, and are prone to accidents. Carrying more than twice your limit can result in exhaustion.</li>
 			<li><strong>Coin.</strong> 250 coins count as one item.</li>
 		</ul>
+		<div class="wutc-sidebar theme-light pt-3 pb-1 ps-3 pe-3 mt-0 mb-3">
+			<p>All costs are listed in hacksilver (sp). Any other currency or wealth you encounter will require an exchange rate determined by the Referee. Coins are all the same when it comes to encumbrance.</p>
+		</div>
 	</div>
 	<div class="col-md-6">
 		<div class="text-center">
@@ -1057,7 +1048,14 @@
 </div>
 <hr>
 
-<h2 id="resolution-tools">Resolution Tools<a class="wutc-header-anchor" href="#resolution-tools" title="Permalink" aria-hidden="true"></a></h2>
+<h2 id="resolution-tools">Resolution<a class="wutc-header-anchor" href="#resolution-tools" title="Permalink" aria-hidden="true"></a></h2>
+<h3 id="timekeeping">Timekeeping<a class="wutc-header-anchor" href="#timekeeping" title="Permalink" aria-hidden="true"></a></h3>
+<ul>
+	<li><strong>Rounds.</strong> Each round lasts about 6 seconds.</li>
+	<li><strong>Minutes.</strong> Each <a href="#naval-combat">naval combat</a> turns last about 1 minute.</li>
+	<li><strong>Turns.</strong> Each turn lasts about 10 minutes.</li>
+</ul>
+<hr>
 <h3 id="tests">Tests<a class="wutc-header-anchor" href="#tests" title="Permalink" aria-hidden="true"></a></h3>
 <p>The Referee might determine your <a href="#characters">characteristics</a> are tested. To succeed, roll under your characteristic, depending on the difficulty of the task (determined by the Referee).</p>
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
@@ -1085,7 +1083,7 @@
 </table></div>
 <hr>
 <h3 id="saves">Saves<a class="wutc-header-anchor" href="#saves" title="Permalink" aria-hidden="true"></a></h3>
-<p>In response to action or the need for you to muster your defenses, the Referee might call for you to roll a d20 for a save. The target number you must meet or exceed depends on the save:</p>	
+<p>In response to action or the need for you to muster your defenses, the Referee might call for you to roll d20 for a save. The target number you must meet or exceed depends on the save:</p>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Saves</caption>
 	<thead>
@@ -1119,25 +1117,19 @@
 <hr>
 <h3 id="combat">Combat<a class="wutc-header-anchor" href="#combat" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
-	<li><strong>Initiative.</strong> Roll a d10. If the result is equal to or less than your <a href="#armor">AC</a>, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to roll initiative each <a href="#timekeeping">round</a>.</li>
-	<!-- remove "reroll" -->
-	<li><strong>Attacks.</strong> Roll 1d20 plus attack bonus, any modifiers, and the target's <a href="#armor">AC</a>. If the result is at least 20, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>). Damage is subtracted from the target's HP.</li>
-	<!-- replace, condense headers -->
+	<li><strong>Initiative.</strong> roll d10. If the result is equal to or less than your <a href="#armor">AC</a>, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to roll initiative each <a href="#timekeeping">round</a>.</li>
+	<li><strong>Attacks.</strong> Roll d20 plus attack bonus, any modifiers, and the target's <a href="#armor">AC</a>. If the result is at least 20, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>). Damage is subtracted from the target's HP.</li>
 	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 <a href="#timekeeping">rounds</a>, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies">bandages</a>). A creature reduced to 0 HP dies.</li>
 </ul>
 <h4 id="combat-complications">Combat Complications<a class="wutc-header-anchor" href="#combat-complications" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Flanked.</strong> +2 to <a href="#combat">attacks</a> for each ally attacking the same target.</li>
-	<!-- ally instead of "other person" -->
-	<li><strong>Mounted.</strong> +3 to <a href="#combat">attacks</a> against unmounted foes, and deal 2d6 with a <a href="#weapons">weapon</a> that can be couched (held horizontally perpendicular to your body).</li>
-	<!-- seems so weird this is not a weapon property. could we get a bespoke list? is it a straight 2d6 roll, ignoring the usual die discards of heavy weapons? -->
+	<li><strong>Mounted.</strong> +3 to <a href="#combat">attacks</a> against unmounted foes, and deal 2d6 with a couched <a href="#weapons">weapon</a> (held perpendicular to your body).</li>
 	<li><strong>Prone.</strong> Melee <a href="#combat">attacks</a> automatically hit.</li>
 	<li><strong>Unaware.</strong> Mortals are instantly slain if you can ensure a killing blow.</li>
-	<!-- alphabetize above -->
 </ul>
 <h4 id="creatures">Creatures<a class="wutc-header-anchor" href="#creatures" title="Permalink" aria-hidden="true"></a></h4>
 <p>Creatures add half their HD to their <a href="#combat">attacks</a>. Creature HD also affects the number of attacks a creature makes each <a href="#timekeeping">round</a>.</p>
-<!-- add explanation of number of attacks -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Creature Attacks</caption>
 	<thead>
@@ -1275,15 +1267,12 @@
 <h3 id="companions-and-hirelings">Companions and Hirelings<a class="wutc-header-anchor" href="#companions-and-hirelings" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Companions.</strong> For each 1000 sp of wealth you have, you might attract a companion. Adventuring companions take half the share a character takes from all loot.</li>
-	<!-- do companions run off the same generation and basic rules as characters do? -->
 	<li><strong>Hirelings.</strong> You can hire as many hirelings as you can find and pay each day.</li>
-	<!-- add "each day" -->
-	<!-- do you roll for characteristics, etc. of hirelings? -->
 	<li><strong>Hit Points.</strong> Each hireling has 1 HD. Roll it and add any listed bonus HP to the result.</li>
-	<!-- add above -->
 	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a <a href="#shields">shield</a> equipped reduce their <a href="#armor">AC</a> by 1.</li>
 	<li><strong>Skirmishers (<span class="wutc-symbol">&ddagger;</span>).</strong> Must succeed a <a href="#morale">morale</a> check to enter a melee, and each <a href="#timekeeping">round</a> they remain.</li>
 </ul>
+<!-- companions generated like characters, hirelings maybe flat +2s to all? -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Hirelings</caption>
 	<thead>
@@ -1483,7 +1472,7 @@
 	<div class="col-md-6">
 		<ul>
 			<li><strong>Duration.</strong> Wind strength persists for 1d6 days.</li>
-			<li><strong>Direction.</strong> Roll 1d6 each day to determine change in wind direction:</li>
+			<li><strong>Direction.</strong> Roll d6 each day to determine change in wind direction:</li>
 		</ul>			
 		<div class="table-responsive"><table class="table table-light table-striped table-sm">		
 			<caption>Wind Direction</caption>
@@ -1537,7 +1526,6 @@
 	<li><strong>Ramming.</strong> Deals 1d6 damage for each remaining vessel HD, and deals 1d6 damage to your vessel.</li>
 	<li><strong>Fire.</strong> Deals 1d6 damage. On a 6, the fire increases, dealing an additional 1d6 each <a href="#timekeeping">round</a>. On a 1, the fire decreases by 1d6. A fire with no damage die is extinguished.</li>
 	<li><strong>Sinking.</strong> If a vessel takes at least 6 damage from a hit, it might begin <a href="#sinking">sinking</a> (determined by the Referee).</li>
-	<!-- at least 6-->
 </ul>
 <h4 id="sinking">Sinking<a class="wutc-header-anchor" href="#sinking" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
@@ -1545,8 +1533,7 @@
 	<li><strong>Preventing Sinking.</strong> If half the crew works to save the vessel for 1d6 <a href="#timekeeping">rounds</a>, there is a 70% chance the vessel is saved. A crew under attack can't prevent sinking.</li>
 </ul>
 <h4 id="drowning">Drowning<a class="wutc-header-anchor" href="#drowning" title="Permalink" aria-hidden="true"></a></h4>
-<p>If you remain in water for 1 minute, roll 1d20. If the result is greater than your AC, you drown.</p>
-<!-- 1d20 -->
+<p>If you remain in water for 1 minute, roll d20. If the result is greater than your AC, you drown.</p>
 <hr>
 <h3 id="upon-the-land">Upon the Land<a class="wutc-header-anchor" href="#upon-the-land" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
@@ -1586,7 +1573,7 @@
 <h3 id="beneath-the-earth">Beneath the Earth<a class="wutc-header-anchor" href="#beneath-the-earth" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Exploration.</strong> Most activities take 1 <a href="#timekeeping">turn</a>, for example, searching for traps, unlocking doors, or clearing obstacles.</li>
-	<li><strong>Rest.</strong> After combat or an hour of exploration, you should take one <a href="#timekeeping">turn</a> to rest. If you push beyond your limits, the Referee might impose a &minus;2 penalty to d20 rolls until you rest for 2 <a href="#timekeeping">turns</a>.</li>
+	<li><strong>Rest.</strong> After combat or an hour of exploration, you should take one <a href="#timekeeping">turn</a> to rest. If you push on, the Referee might impose a &minus;2 penalty to d20 rolls until you rest for 2 <a href="#timekeeping">turns</a>.</li>
 </ul>
 <h4 id="light">Light<a class="wutc-header-anchor" href="#light" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
