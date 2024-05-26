@@ -39,7 +39,7 @@
 						<li><a class="dropdown-item wutc-nav" href="#characters">Character Creation</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#weapons">Weapons</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#armor">Armor</a></li>
-						<li><a class="dropdown-item wutc-nav" href="#supplies">Supplies</a></li>
+						<li><a class="dropdown-item wutc-nav" href="#supplies-and-encumbrance">Supplies and Encumbrance</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#livestock">Livestock</a></li>
 					</ul>
 				</li>
@@ -363,7 +363,8 @@
 
 <h2 id="armor">Armor<a class="wutc-header-anchor" href="#armor" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
-	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#combat">attack</a>. AC affects other thing as well, including your <a href="#supplies">encumbrance</a> limit, and how easy it is for you to swim without <a href="#drowning">drowning</a>.</li>
+	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#combat">attack</a>. AC also affects your <a href="#supplies">encumbrance</a> limit (AC + 5), <a href="#combat">initiative</a> (1d10 &le; AC), and <a href="#drowning">drowning</a> (d20 &ge; AC).</li>
+	<!-- edit -->
 	<li><strong>Dodging Modifier.</strong> Your dodging <a href="#saves">saves</a> are modified depending on the armor you wear (or eschew).</li>
 </ul>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
@@ -403,6 +404,10 @@
 		</tr>
 	</tbody>
 </table></div>
+<div class="wutc-sidebar theme-light pt-3 pb-1 ps-3 pe-3 mt-0 mb-3">
+	<p>Magic armor might alter any of the properties of armor, including AC, <a href="#supplies">encumbrance</a>, <a href="#combat">initiative</a>. or <a href="#drowning">drowning</a>.</p>
+</div>
+<!-- add if room -->
 <hr>
 <div class="row">
 	<div class="col-md-6">
@@ -423,6 +428,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<h2 id="supplies-and-encumbrance">Supplies and Encumbrance<a class="wutc-header-anchor" href="#supplies-and-encumbrance" title="Permalink" aria-hidden="true"></a></h2>
+		<p>This contains suggested prices for <a href="#supplies">supplies</a> and <a href="#livestock">livestock</a>.</p>
 		<ul>
 			<li><strong>Capacity.</strong> You can carry a number of items equal to your <a href="#armor">AC</a> plus 5. Equipped items don't count towards this limit.</li>
 			<li><strong>Encumbrance.</strong> If you exceed your limit, you are encumbered. You move at half-speed, and are prone to accidents. Carrying more than twice your limit can result in exhaustion.</li>
