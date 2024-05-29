@@ -67,7 +67,7 @@
 					<ul class="dropdown-menu dropdown-menu-light theme-light" aria-labelledby="wutc-navbar-travel">
 						<li><a class="dropdown-item wutc-nav" href="#abreast-the-sea">Abreast the Sea</a></li>
 						<li><a class="dropdown-item wutc-nav" href="#upon-the-land">Upon the Land</a></li>
-						<li><a class="dropdown-item wutc-nav" href="#beneath-the-earth">Beneath the Earth</a></li>
+						<li><a class="dropdown-item wutc-nav" href="#in-darkness">In Darkness</a></li>
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
@@ -363,8 +363,7 @@
 
 <h2 id="armor">Armor<a class="wutc-header-anchor" href="#armor" title="Permalink" aria-hidden="true"></a></h2>
 <ul>
-	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#combat">attack</a>. AC also affects your <a href="#supplies">encumbrance</a> limit (AC + 5), <a href="#combat">initiative</a> (1d10 &le; AC), and <a href="#drowning">drowning</a> (d20 &ge; AC).</li>
-	<!-- edit -->
+	<li><strong>Armor Class (AC).</strong> AC determines how difficult a target is to hit with an <a href="#combat">attack</a>. AC also affects your <a href="#supplies">encumbrance</a> limit, initiative in <a href="#combat">combat</a>, and <a href="#drowning">drowning</a>.</li>
 	<li><strong>Dodging Modifier.</strong> Your dodging <a href="#saves">saves</a> are modified depending on the armor you wear (or eschew).</li>
 </ul>	
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
@@ -1120,6 +1119,7 @@
 <h3 id="combat">Combat<a class="wutc-header-anchor" href="#combat" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Initiative.</strong> roll d10. If the result is equal to or less than your <a href="#armor">AC</a>, you act before your foes. Your <a href="#companions-and-hirelings">companions and hirelings</a> act on your initiative. The Referee might require you to roll initiative each <a href="#timekeeping">round</a>.</li>
+	<li><strong>Surprise.</strong> Light and sound might determine whether you are aware of others. Unaware parties have a 2-in-6 chance of being surprised.</li>
 	<li><strong>Attacks.</strong> Roll d20 plus attack bonus, any modifiers, and the target's <a href="#armor">AC</a>. If the result is at least 20, you hit the target and roll damage (determined by your <a href="#weapons">weapon</a>). Damage is subtracted from the target's HP.</li>
 	<li><strong>Death.</strong> If you are reduced to 0 HP, you die in 2 <a href="#timekeeping">rounds</a>, unless you receive assistance (for example, another character tends to your wounds with <a href="#supplies">bandages</a>). A creature reduced to 0 HP dies.</li>
 </ul>
@@ -1274,7 +1274,6 @@
 	<li><strong>Shield in Hand (<span class="wutc-symbol">&dagger;</span>).</strong> Some hirelings arrive with a shield in their equipment. Like characters, creatures with a <a href="#shields">shield</a> equipped reduce their <a href="#armor">AC</a> by 1.</li>
 	<li><strong>Skirmishers (<span class="wutc-symbol">&ddagger;</span>).</strong> Must succeed a <a href="#morale">morale</a> check to enter a melee, and each <a href="#timekeeping">round</a> they remain.</li>
 </ul>
-<!-- companions generated like characters, hirelings maybe flat +2s to all? -->
 <div class="table-responsive"><table class="table table-light table-striped table-sm">
 	<caption>Hirelings</caption>
 	<thead>
@@ -1572,7 +1571,7 @@
 	<li><strong>Maps.</strong> The Referee might hide the map and continue play without it until you re-establish your position. While lost, you move in a random direction.</li>
 </ul>
 <hr>
-<h3 id="beneath-the-earth">Beneath the Earth<a class="wutc-header-anchor" href="#beneath-the-earth" title="Permalink" aria-hidden="true"></a></h3>
+<h3 id="in-darkness">In Darkness<a class="wutc-header-anchor" href="#in-darkness" title="Permalink" aria-hidden="true"></a></h3>
 <ul>
 	<li><strong>Exploration.</strong> Most activities take 1 <a href="#timekeeping">turn</a>, for example, searching for traps, unlocking doors, or clearing obstacles.</li>
 	<li><strong>Rest.</strong> After combat or an hour of exploration, you should take one <a href="#timekeeping">turn</a> to rest. If you push on, the Referee might impose a &minus;2 penalty to d20 rolls until you rest for 2 <a href="#timekeeping">turns</a>.</li>
@@ -1583,15 +1582,14 @@
 	<li><strong>Lanterns.</strong> A <a href="#supplies">pint flask of oil</a> burning in a <a href="#supplies">lantern</a> lasts 4 hours (24 <a href="#timekeeping">turns</a>).</li>
 	<li><strong>Monsters.</strong> Might be able to see in darkness.</li>
 </ul>
-<h4 id="beneath-the-earth-movement">Movement<a class="wutc-header-anchor" href="#beneath-the-earth-movement" title="Permalink" aria-hidden="true"></a></h4>
+<h4 id="in-darkness-movement">Movement<a class="wutc-header-anchor" href="#in-darkness-movement" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Cautious Movement.</strong> 240 feet each <a href="#timekeeping">turn</a>, and you can map, check for traps, and make close observation.</li>
 	<li><strong>Hasty Movement.</strong> 960 feet each <a href="#timekeeping">turn</a>, but you might become lost, stumble into ambushes, or trigger traps, especially when moving through areas you haven't fully mapped yet (determined by the Referee).</li>
 </ul>
-<h4 id="encounters">Encounters<a class="wutc-header-anchor" href="#encounters" title="Permalink" aria-hidden="true"></a></h4>
+<h4 id="in-darkness-encounters">Encounters<a class="wutc-header-anchor" href="#in-darkness-encounters" title="Permalink" aria-hidden="true"></a></h4>
 <ul>
 	<li><strong>Encounters.</strong> Each <a href="#timekeeping">turn</a>, there is a 1-in-6 chance of an encounter.</li>
-	<li><strong>Surprise.</strong> Light and sound might determine whether you are aware of others. Unaware parties have a 2-in-6 chance of being surprised.</li>
 	<li><strong>Distance.</strong> When an encounter begins, each group begins 2d6 &times; 10 feet apart. If anyone is surprised, the distance is halved.</li>
 </ul>
 <hr>
