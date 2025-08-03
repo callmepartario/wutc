@@ -4,6 +4,12 @@ https://callmepartario.github.io/wutc
 
 This unofficial player's guide to [Wolves Upon the Coast](https://lukegearing.blot.im/wolves-upon-the-coast) is an independent production and is not affiliated with Luke Gearing. This material reprinted with permission, and has been edited for clarity, consistency, or concision. Game rules relevant only to the Referee are omitted entirely. Special thanks to Luke Gearing for providing insights to authorial intent.
 
+## Contact the Editor
+
+- partario.flynn@gmail.com
+- [@oldgus@dice.camp](https://dice.camp/@oldgus)
+- [Ko-fi](https://ko-fi.com/oldgus)
+
 ## More from Old Gus
 
 - [Old Gus' Cypher System Reference Document (OG-CSRD)](https://callmepartario.github.io/og-csrd/)
