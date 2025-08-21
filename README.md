@@ -17,3 +17,4 @@ This unofficial player's guide to [Wolves Upon the Coast](https://lukegearing.bl
 - [Old Gus' Errata for Dungeons & Dragons 5th Edition](https://callmepartario.github.io/old-gus-errata/)
 - [Old Gus' Roadmug Recipes](https://callmepartario.github.io/og-rr/)
 - [Old Gus' Starflight Codex](https://callmepartario.github.io/starflight-codex/)
+- [Old Gus' Year Zero Engine Standard Reference Document (OG-YZESRD)](https://callmepartario.github.io/og-yzesrd/)
