@@ -18,5 +18,6 @@ This unofficial player's guide to [Wolves Upon the Coast](https://lukegearing.bl
 - [Old Gus' Recipe Book (OG-RB)](https://callmepartario.github.io/og-rb/)
 - [Old Gus' Roadmug Recipes (OG-RR)](https://callmepartario.github.io/og-rr/)
 - [Old Gus' Starflight Codex](https://callmepartario.github.io/starflight-codex/)
+- [Old Gus' TTRPG Character Sheets](https://callmepartario.github.io/og-ttrpg/)
 - [Old Gus' Year Zero Engine Standard Reference Document (OG-YZESRD)](https://callmepartario.github.io/og-yzesrd/)
 - [Wolves Upon the Coast: The Unofficial Player's Guide (WUTC-UPG)](https://callmepartario.github.io/wutc/)
